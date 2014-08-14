@@ -3,7 +3,7 @@ layout: post
 title: "Google Charts Directive for AngularJS"
 categories: [AngularJS, Google Charts API, Chart, Data Visualization]
 ---
-# Angular Google Chart Directive
+
 ### Background
 
 There's no doubt about it, if you're working on a project that involves
