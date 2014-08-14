@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Google Charts Directive for AngularJS"
-categories: [AngularJS, Google Charts API, Chart, Data Visualization]
+category: AngularJS
+tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
+date: 2014-08-14 13:49:00
 ---
 
 ### Background
@@ -45,9 +47,9 @@ For a very simple application you can just setup an object with your chart data
 and options, and give that object to the directive from the markup side of
 things.
 
-```
-//Insert Example Code Here.
-```
+{% gist Balrog30/44c9b6baeded858ed511 index.html %}
+
+{% gist Balrog30/44c9b6baeded858ed511 app.js %}
 
 This directive works pretty well for basic scenarios, but does not necessarily
 support 100% of the features provided by the [Google Charts API][1].  To be more
@@ -57,7 +59,10 @@ drawing the chart to the Dashboard.  It's a little complicated to explain but
 basically the workflow is a little different and the directive isn't setup to
 support it.
 
+[View the example in Plunker][5]
+
 [1]: https://developers.google.com/chart/
 [2]: https://github.com/bouil/angular-google-chart/
 [3]: https://github.com/bouil/
 [4]: https://developers.google.com/chart/interactive/docs/gallery/controls
+[5]: http://embed.plnkr.co/x9ttq50KYzuFSULNIX2L/preview
