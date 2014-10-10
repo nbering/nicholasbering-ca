@@ -11,3 +11,4 @@ github_username:  Balrog30
 # Build settings
 markdown: kramdown
 permalink: pretty
+highlighter: pygments
