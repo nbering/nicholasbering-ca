@@ -17,7 +17,8 @@ learning on my own, so I didn't understand what it meant.  Abstract classes were
 very frustrating to me at the time.  I was trying to set up an applet that used
 2D Graphics, and the API Documentation had all these classes that I wanted to use,
 but couldn't, because they were just Abstract Base classes for something that did
-actually do something.
+actually do something.  I still don't completely understand what they were, but
+I imagine they're similar to an Interface in C#.
 
 So that got me off to a rocky start with the concept of "Abstract".  But over the
 years, I've learned a different meaning of the word.  The car analogy is great
@@ -44,3 +45,22 @@ plants.  The same goes for computer programming.  I didn't need to understand
 TCP, HTTP or any other Networking protocols to make a Web Site with HTML when I was
 11 years old.  But understanding more helps me make better solutions, and solve
 more complex problems.
+
+Of course sometimes I have a love-hate relationship with things that I only
+understand at the high level.  Like Linux.  I learned everything I know so far
+in Windows, but there's this whole other world where there is software that does
+nearly Magical things.  I know enought to read a tutorial and get the system up
+and running, but there's just so much going on underneath that if something goes
+wrong it takes me a long time to debug.  But every time I invest the effort to fix
+something I learn more, and it becomes easier.
+
+That being said, I think it is a very valuable skill for life in general to be able
+to look at something at that "just enough to use it" level, and dig deeper to fix
+any problem that comes up.  I know many people who just do not have the desire or
+confidence to look deeper into something and learn more.  They just throw up their
+arms and say "I could never understand that!" and give up.  I feel like my life
+would be very dull indeed if I thought that way.
+
+Mind you, sometimes you just have to know when you're in over your head and get
+help... but I'd never go to a mechanic who wouldn't show me what he's doing to my
+car.
