@@ -4,6 +4,7 @@ title: Google DataTable .Net Wrapper
 description: A Google Visualization DataTable wrapper for building google chart objects from the server.
 category: dot-net
 tags: [google-visualization, asp.net]
+date: 2014-10-24 23:31:00
 ---
 
 So far my blog has focused on using the "Google Charts API":1 in "AngularJS":2 with "Angular-Google-Chart":3.  While this a fantastic combination for a client-side solution, so far it doesn't help us at all on the server side.  In fact, if you're trying to take full advantage of the Google Charts API, your job just got a little more complicated.
