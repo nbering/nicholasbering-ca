@@ -7,26 +7,25 @@ tags: [google-visualization, asp.net]
 date: 2014-10-24 23:31:00
 ---
 
-So far my blog has focused on using the "Google Charts API":1 in "AngularJS":2 with "Angular-Google-Chart":3.  While this a fantastic combination for a client-side solution, so far it doesn't help us at all on the server side.  In fact, if you're trying to take full advantage of the Google Charts API, your job just got a little more complicated.
+p. So far my blog has focused on using the "Google Charts API":1 in "AngularJS":2 with "Angular-Google-Chart":3.  While this a fantastic combination for a client-side solution, so far it doesn't help us at all on the server side.  In fact, if you're trying to take full advantage of the Google Charts API, your job just got a little more complicated.
 
-Getting data into a Google Chart is pretty easy for small amounts of static data, but if you're working with large amounts of dynamic data the JSON-formatted "DataTables":3 needed are a lot of work to set up.  For starters, the structure is kind of a collection of arrays that are logically linked.  Setting something like this up on either the server or client side takes a bit of work.  Also, the date format used by the API is not standard (at least, its not any kind of standard I've ever seen).
+p. Getting data into a Google Chart is pretty easy for small amounts of static data, but if you're working with large amounts of dynamic data the JSON-formatted "DataTables":3 needed are a lot of work to set up.  For starters, the structure is kind of a collection of arrays that are logically linked.  Setting something like this up on either the server or client side takes a bit of work.  Also, the date format used by the API is not standard (at least, its not any kind of standard I've ever seen).
 
-In my search for a simpler solution, I came across the "Google DataTable .Net Wrapper":4.  This helper/conversion library, available on "Nuget":6, makes it a lot
-easier to build a valid Google DataTable on the server, to send off to the client.  It will even convert the standard ".Net DataTable":5 class, so there's a good chance you'll be able to adapt some of your existing data access code to new purpose.
+p. In my search for a simpler solution, I came across the "Google DataTable .Net Wrapper":4.  This helper/conversion library, available on "Nuget":6, makes it a lot easier to build a valid Google DataTable on the server, to send off to the client.  It will even convert the standard ".Net DataTable":5 class, so there's a good chance you'll be able to adapt some of your existing data access code to new purpose.
 
 h2. How-To
 
 h4. Get the Library
 
-The easiest way to get the library to to install it with Nuget in Visual Studio.  From the Package Manager Console:
+p. The easiest way to get the library to to install it with Nuget in Visual Studio.  From the Package Manager Console:
 
 div(nuget-console-command). PM> Install-Package Google.DataTable.Net.Wrapper -Version 3.1.0
 
-Or if you prefer, you can download the library from the project site on "Codeplex":4, and add the references manually.
+p. Or if you prefer, you can download the library from the project site on "Codeplex":4, and add the references manually.
 
 h4. Use It
 
-You can work with the Google DataTable Wrapper three different ways:
+p. You can work with the Google DataTable Wrapper three different ways:
 
 * Create an object of type @Google.DataTable.Net.Wrapper.DataTable@ and add your columns and rows directly to this object.  This may work well if you are building your project from the group up to work with Google Charts.
 
@@ -105,7 +104,7 @@ using (var sysDt = new System.Data.DataTable())
 }
 {% endhighlight %}
 
-The past three code samples are from the Google DataTable .Net Wrapper Project's "Documentation Page":7, used with permission.
+p. The past three code samples are from the Google DataTable .Net Wrapper Project's "Documentation Page":7, used with permission.
 
 h4. Using with ASP.Net Web API
 
