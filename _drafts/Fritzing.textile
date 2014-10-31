@@ -1,0 +1,29 @@
+---
+layout: post
+title: Fritzing
+description: An overview of Fritzing, the open-source circuit design tool.
+category: circuits
+tags: [Fritzing, Arduino, Printed-circuit]
+---
+
+p. About a year ago, I spent some time hacking away at electronic hardware using the Arduino platform.  I made my own Arduio shield that fit into the case from a busted old time-clock from work (a time clock with a broken clock unit doesn't really help anyone), and used the clock's numeric keypad and LCD to control my project.
+
+p. At the time, I chose Eagle CAD to design my cicuits, because it was recommended in a book I've had since the early 2000's.  It's a pretty powerful tool, built for people who spend 8-hours a day doing black magic wth electricty and solder... not me.  As with many tools, with great power comes great complexity.  I really just wanted to build a quick one or two-layer board, and the features that made 4 to 16 layer boards would just get in my way.
+
+p. Even more of an issue was the price.  Eagle CAD is freeware, if you can work in the bounds of a very small board surface.  It might even have been enough space for me, but I was making my boards at home so I needed a bit of extra room to account for the imperfect chemical etching process.
+
+h3. Enter Fritzing
+
+p. I was already familiar with Fritzing by name when I started using Eagle CAD, but only because I saw images of breadboard layouts in tutorials and blog posts all over the internet.  They were all credited to Fritzing, but I was under the mistaken impression that that's all it did.  Now I know... and I've definitely been converted.
+
+p. I started fooling around in fritzing, trying to convert a board I was working on in Eagle to Fritzing.  I really enjoyed poking through the very graphical list of parts and assembling them in the breadboard view.
+
+p. Then I built my Board outline in illustrator, and got great results quickly.  Doing the same thing for the same board layout in Eagle CAD took me hours.  Inkscape is also available to do the same job for free, but I have problems with the extensions not working in OS X.  Without extensions it was virtually impossible to place a precisely sized and positioned circle to make the board outline for my fairly comlicated handheld project case.  I have since installed a Ubuntu VM in parallels on my Mac, and no longer have complaints about Inkscape.
+
+h3. Visually Pleasing Editor
+
+p. Fritizing suits the massive following of people working with the Arduino platform very well.  Many of the projects I have seen published for Arduino have been very visual in nature (projects with blinky lights or motion are very satisfying to build and show off), and Fritzing is a good fit for the creators of such projects.
+
+p. The Breadboard view gives a very natural interface for building projects with the appearance of real-world components.  This is also great for documenting circuits that you've already prototyped on a breadboard.  As I've already mentioned, this feature is how I discovered Fritzing.  But it doesn't stop there...
+
+p. Fritzing turns your Breadboarded project into both a traditional schematic diagram, and a printed circuit board layout.  It will even do auto-routing, something of a premium feature in the professional packages.  While I have yet to make a board with any auto routing package that didn't need to be tweaked considerably before making the board, it still saves a ton of time up-front.  The auto-route feature also works on the schematic diagram and breadboard views when converting from any design view to another.
