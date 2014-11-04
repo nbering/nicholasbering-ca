@@ -1,0 +1,16 @@
+---
+layout: post
+title: Practice Problems
+description: There has been some increasing attention to the idea of coding practice.  Whether it's to prepare for an interview, or to prove you're the best, coding practice problems is a great way to hone you're programming skills.  Here are a few sites that provide free practice problems.
+category: programming
+---
+
+p.  There has been some increasing attention to the idea of coding practice.  Whether it's to prepare for an interview, or to prove you're the best, coding practice problems is a great way to hone you're programming skills.  Here are a few sites that provide free practice problems.
+
+h3. "Code Chef":http://www.codechef.com/
+
+p. New programmers can gain valuable experience by solving one of the many available practice problems.  After gaining some confidence on the practice problems, you can take on the challenge of one of their monthly contests.  They boast contest submissions accepting over 50 languages.
+
+h3. "CodingBat":http://codingbat.com/
+
+p. CodingBat has a variety of simple problems to solve.  Ideal for a quick brain teaser, perhaps as a daily practice problem while preparing for exams or interviews.  Problems can be solved and tested in the browser, with ideal solutions available for each problem.  Available in Java and Python.
