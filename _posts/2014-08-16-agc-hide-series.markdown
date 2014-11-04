@@ -3,7 +3,7 @@ layout: post
 title: Hide a Series with Angular-Google-Chart
 category: AngularJS
 tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
-description: In my previous post - Google Charts Directive for AngularJS - I introduced the [Angular-Google-Chart Project][2].  In this post I'm going to skip some of the basics and go straight to something advanced that I found to be in demand for both this directive and the Google Charts API in general.
+description: In my previous post - Google Charts Directive for AngularJS - I introduced the Angular-Google-Chart Project.  In this post I'm going to skip some of the basics and go straight to something advanced that I found to be in demand for both this directive and the Google Charts API in general.
 date: 2014-08-16 15:53:00
 ---
 In my previous post - [Google Charts Directive for AngularJS][1] - I introduced

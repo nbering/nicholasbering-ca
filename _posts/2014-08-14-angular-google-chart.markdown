@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Google Charts Directive for AngularJS"
+title: Google Charts Directive for AngularJS
+description: An introduction to my favourite pair of tools for adding dynamic JavaScript charts to web sites.  Uses the Google Charts API and AngularJS.
 category: AngularJS
 tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
 date: 2014-08-14 13:49:00
