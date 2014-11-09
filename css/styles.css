@@ -1,0 +1,51 @@
+---
+---
+@charset "UTF-8";
+
+@font-face {
+  font-family: "nb-blog-icons";
+  src:url("{{ "/fonts/nb-blog-icons.eot" | prepend: site.baseurl }}");
+  src:url("{{ "/fonts/nb-blog-icons.eot?#iefix" | prepend: site.baseurl }}") format("embedded-opentype"),
+    url("{{ "/fonts/nb-blog-icons.woff" | prepend: site.baseurl }}") format("woff"),
+    url("{{ "/fonts/nb-blog-icons.ttf" | prepend: site.baseurl }}") format("truetype"),
+    url("{{ "/fonts/nb-blog-icons.svg#nb-blog-icons" | prepend: site.baseurl }}") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "nb-blog-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "nb-blog-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-comment:before {
+  content: "a";
+}
+.icon-calendar:before {
+  content: "b";
+}
+.icon-social-stack-overflow:before {
+  content: "c";
+}

@@ -9,8 +9,11 @@ layout: default
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="icon-calendar"></span>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="icon-comment"></span>
+        <span class="disqus-comment-count" data-disqus-url="{{ post.url | prepend: site.baseurl | prepend: site.url }}"></span>
         {% if post.description %}
         <p>{{ post.description}}</p>
         {% endif %}
@@ -21,3 +24,13 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+
+<script type="text/javascript">
+var disqus_shortname = 'balrog30';
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
