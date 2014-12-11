@@ -14,3 +14,31 @@ p. New programmers can gain valuable experience by solving one of the many avail
 h3. "CodingBat":http://codingbat.com/
 
 p. CodingBat has a variety of simple problems to solve.  Ideal for a quick brain teaser, perhaps as a daily practice problem while preparing for exams or interviews.  Problems can be solved and tested in the browser, with ideal solutions available for each problem.  Available in Java and Python.
+
+h3. "Google Code Jam":http://code.google.com/codejam/
+
+p. Code Jam was started by Google in 2003 as a way to identify potential job candidates.  The Competition is algorithm-based with no preference for any particular programming language.  In fact, the competition accepts submissions in any language provided that the compiler or interpreter is available for free.
+
+p. All the contest problems back to 2008 are posted at "their website":http://code.google.com/codejam/contests.html for you to try.  There is a short list of "choice" problems near the top of the page.
+
+h3. "Top Coder":http://www.topcoder.com/
+
+p. Top Coder is quite a bit different than than the other sites I've listed so far.  Top Coder is
+sort of a listing of real problems that need to be solved.  Many of the listed problems come with
+a monetary reward for completion.
+
+p. Top is not just for programming.  They have problems for Designers, Programmers, and the new
+field of Data Science.  So if you're looking for some experience working on real-world problems
+check out Top Coder.
+
+h3. "Code Hunt":http://www.codehunt.com/
+
+p. I stumbled upon Code Hunt from an __.Net Rocks!__ "Episode 1065":http://www.dotnetrocks.com/default.aspx?showNum=1065 and was instantly impressed.
+This project came out of Microsoft Research, and is much more powerful than it appears on the surface.  Check out
+the podcast episode to hear all about this.
+
+p. Basically though, Code Hunt is a Unit Test-based game.  It can be played as C# or Java.  You get a series
+of problems where you see the results of a set of test expectations, and you need to modify a function so that
+all the tests pass.  This all runs in the browser and had a really polished look and feel, with audio and everything.
+
+p. Code Hunt makes learning unit testing fun.
