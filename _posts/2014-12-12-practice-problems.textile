@@ -3,13 +3,14 @@ layout: post
 title: Practice Problems
 description: There has been some increasing attention to the idea of coding practice.  Whether it's to prepare for an interview, or to prove you're the best, coding practice problems is a great way to hone you're programming skills.  Here are a few sites that provide free practice problems.
 category: programming
+date: 2014-12-12 22:46
 ---
 
 p.  There has been some increasing attention to the idea of coding practice.  Whether it's to prepare for an interview, or to prove you're the best, coding practice problems is a great way to hone you're programming skills.  Here are a few sites that provide free practice problems.
 
 h3. "Code Chef":http://www.codechef.com/
 
-p. New programmers can gain valuable experience by solving one of the many available practice problems.  After gaining some confidence on the practice problems, you can take on the challenge of one of their monthly contests.  They boast contest submissions accepting over 50 languages.
+p. New programmers can gain valuable experience by solving one of the many available practice problems on Code Chef.  After gaining some confidence on the practice problems, you can take on the challenge of one of their monthly contests.  The Code Chef website boasts that they accept contest submissions in over 50 programming languages.
 
 h3. "CodingBat":http://codingbat.com/
 
@@ -39,6 +40,10 @@ the podcast episode to hear all about this.
 
 p. Basically though, Code Hunt is a Unit Test-based game.  It can be played as C# or Java.  You get a series
 of problems where you see the results of a set of test expectations, and you need to modify a function so that
-all the tests pass.  This all runs in the browser and had a really polished look and feel, with audio and everything.
+all the tests pass.  This all runs in the browser and has a really polished look and feel, with audio and everything.
 
 p. Code Hunt makes learning unit testing fun.
+
+h3. There are more out there!
+
+p. There are many web sites dedicated to programming practice problems.  I've just scratched the surface here, and in fact I've pushed this out a little less complete than I would have liked because it's been a while since I posted on this blog.  If you have any favourite sites please post them in the comments and I may add them to the article.
