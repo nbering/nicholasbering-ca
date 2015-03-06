@@ -1,0 +1,109 @@
+---
+layout: post
+title: Google Charts API Promise
+description: The Google Charts API must be loaded asynchronously, so how can you tell when it's loaded?  In this post I answer that, and also give some related tips and tricks.
+category: AngularJS
+tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
+date: 2015-03-04
+---
+
+p. The Google Charts API must be loaded Asynchronously. So, when using the angular-google-chart directive, how can you tell when then API has become available to the controller?
+
+h3. The Problem
+
+p. The Angular-Google-Chart directive is designed in such a way that you may never actually need direct access to the Charts API.  But this simple case is pretty narrow.  If you need specific control over the appearance of the chart, or have need to manipulate or filter data, then you will need access to the Charts API directly.
+
+h3. The Promise
+
+p. The module provided with the angular-google-chart project provides a service factory that returns a promise.  That promise will resolve when the API has loaded.  Now, to clarify this a little, angular's dependency injection is giving you a promise that resolves when the API is loaded.  It does not return an error if the load fails, and does not return any object on success.  The resolve on success is just a signal that the API is now available for use.
+
+h3. Simple Case
+
+{% highlight javascript %}
+angular.module('myapp', ['googlechart'])
+  .controller('MainController', function($scope, googleChartApiPromise){
+    $scope.chart = {};
+    googleChartApiPromise.then(function()
+    {
+      $scope.chart.type = 'LineChart';
+      //Create a new empty DataTable to populate programmatically,
+      //or maybe from user input
+      $scope.chart.data = new google.visualization.DataTable();
+    })
+  })
+{% endhighlight %}
+
+p. So, the above is a simple case like you might see in some tutorials.  Bear with me here, but here's the same thing composed with some better practices (this is purely a refactor and changes no functionality). See my article on the AngularJS Style Guide to see the rules I'm following here (sorry if I don't follow them all perfectly).
+
+{% highlight javascript %}
+(function (){
+  //app module already declared elsewhere
+  angular.module('myApp')
+    .controller('MainController', MainController);
+
+  MainController.$inject = ['$scope', 'googleChartApiPromise'];
+
+  function MainController($scope, googleChartApiPromise){
+    // Setup bindable objects
+    $scope.chart = {};
+
+    // Run function to initlize controller
+    init();
+
+    function init(){
+      googleChartApiPromise.then(chartApiSuccess);
+    }
+
+    function chartApiSuccess(){
+      $scope.chart.type = 'LineChart';
+      $scope.chart.data = new google.visualization.DataTable();
+    }
+  }
+})();
+{% endhighlight %}
+
+p. Clearly this is more lines of code, but I personally find this easier to pick up and read.  I won't be writing in the older style anymore from here on out.
+
+h3. $q.all()
+
+p. So the first example works very well for simple scenarios.  The next scenario is a solution for when you need to use the api to process some data, or just to run after some data has loaded.
+
+{% highlight javascript %}
+(function(){
+  angular.module('myApp')
+    .controller('myApp', MainController);
+
+  MainController.$inject = ['$scope', '$q', '$http', 'googleChartApiPromise'];
+
+  function MainController($scope, $q, googleChartApiPromise){
+    $scope.chart = {};
+
+    init();
+
+    function init(){
+      var dataPromise = $http({
+        method: 'GET',
+        url: 'http://api.example.com/some-data/'
+      });
+
+      $q.all({data: dataPromise, api: googleChartApiPromise})
+        .then(apiLoadSuccess);
+    }
+
+    function apiLoadSuccess(result){
+      $scope.chart.type = 'LineChart';
+      //create a new DataTable loaded with data from the HTTP response
+      $scope.chart.data = new google.visualization.DataTable(result.data.data);
+    }
+
+
+  }
+})();
+
+{% endhighlight %}
+
+h3. The Not-So-Good Idea
+
+p. I was going to write about passing the googleChartsApiPromise as a resolve to ngRoute, but then while researching this I realized the the promise never fails.  And with that detail, I decided that it would theoretically be a very bad idea to do that as if it fails the route change will stall and never return an error.  Not a good idea after all.
+
+h3. Links 
