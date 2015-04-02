@@ -4,7 +4,7 @@ title: Google Charts API Promise
 description: The Google Charts API must be loaded asynchronously, so how can you tell when it's loaded?  In this post I answer that, and also give some related tips and tricks.
 category: AngularJS
 tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
-date: 2015-03-04
+date: 2015-04-02
 ---
 
 p. The Google Charts API must be loaded Asynchronously. So, when using the "angular-google-chart":1 directive, how can you tell when then API has become available to the controller?
@@ -95,6 +95,12 @@ h3. The Not-So-Good Idea
 p. I was going to write about passing the googleChartsApiPromise as a resolve to ngRoute, but then while researching for this post I realized the the promise never fails.  And with that detail, I decided that it would theoretically be a very bad idea to pass this promise to a route resolve, because if it fails the route change will stall and never return an error.  Not such a great idea after all.
 
 h3. Links
+
+* "Angular Google Chart on GitHub":1
+* "Google Charts API Documentation":2
+* "AngularJS":5
+** "$q Service":6
+** "$http Service":7
 
 [1]https://github.com/bouil/angular-google-chart
 [2]https://developers.google.com/chart/
