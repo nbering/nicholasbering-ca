@@ -9,4 +9,4 @@ User website for Balrog30. Accessible from the registered domain http://nicholas
 
 ## Article Ideas
 
-- [ ] googleChartsApiPromise Tips and Tricks
+- [x] googleChartsApiPromise Tips and Tricks
