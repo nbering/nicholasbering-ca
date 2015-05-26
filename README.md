@@ -9,4 +9,6 @@ User website for Balrog30. Accessible from the registered domain http://nicholas
 
 ## Article Ideas
 
-- [x] googleChartsApiPromise Tips and Tricks
+- [ ] [Ionic Framework](http://ionicframework.com)
+- [ ] [ngCordova](http://ngCordova.com)
+- [ ] [Visual Studio Code](https://visualstudio.com/products/code-vs)
