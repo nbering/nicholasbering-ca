@@ -12,3 +12,4 @@ User website for Balrog30. Accessible from the registered domain http://nicholas
 - [ ] [Ionic Framework](http://ionicframework.com)
 - [ ] [ngCordova](http://ngCordova.com)
 - [ ] [Visual Studio Code](https://visualstudio.com/products/code-vs)
+- [ ] Atom Syntax Languages
