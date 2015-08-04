@@ -3,7 +3,12 @@ layout: post
 title: Abstractions
 description: My random ramblings on the nature of abstraction.
 category: rambling
+date: 2015-08-03
 ---
+
+> I wrote this a few months ago. At 1am. In a coffee shop. I haven't published anything
+> in some time, so I thought I'd share this today. Take what you will from this,
+> on some level it means a lot, on others it means nothing at all.
 
 One of the things I've always loved about working with computers lies in the
 very nature of abstraction.  I just love how I can use something, with very
@@ -49,7 +54,7 @@ more complex problems.
 Of course sometimes I have a love-hate relationship with things that I only
 understand at the high level.  Like Linux.  I learned everything I know so far
 in Windows, but there's this whole other world where there is software that does
-nearly Magical things.  I know enought to read a tutorial and get the system up
+nearly Magical things.  I know enough to read a tutorial and get the system up
 and running, but there's just so much going on underneath that if something goes
 wrong it takes me a long time to debug.  But every time I invest the effort to fix
 something I learn more, and it becomes easier.
@@ -58,8 +63,8 @@ That being said, I think it is a very valuable skill for life in general to be a
 to look at something at that "just enough to use it" level, and dig deeper to fix
 any problem that comes up.  I know many people who just do not have the desire or
 confidence to look deeper into something and learn more.  They just throw up their
-arms and say "I could never understand that!" and give up.  I feel like my life
-would be very dull indeed if I thought that way.
+arms and say "I could never understand that!" and give up.  My life
+would be very dull indeed if I thought that way!
 
 Mind you, sometimes you just have to know when you're in over your head and get
 help... but I'd never go to a mechanic who wouldn't show me what he's doing to my
