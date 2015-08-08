@@ -34,5 +34,5 @@ h3. Links
 [3]http://blog.codepen.io/radio/
 [4]http://rangle.io/
 [5]https://github.com/angular-google-chart/angular-google-chart/
-[6]pen
+[6]http://codepen.io/Balrog30/pen/yNZxKr
 [7]http://careers.stackoverflow.com/company/rangle-io
