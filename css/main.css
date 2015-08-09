@@ -435,3 +435,18 @@ a:visited { color: #205caa; }
   overflow: auto;
   padding: 15px;
 }
+
+.image-frame {
+  text-align:center;
+  font-style: italic;
+}
+
+.image-frame img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+  display: block;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
