@@ -17,7 +17,7 @@ p(image-frame). !(test){{ site.baseurl }}/images/analytics-annotations-screensho
 
 p. It turns out there was no way to make an annotation look quite like the feature I was looking for. But that's okay, there is still a fairly straight-forward way to do it. And I'll even save you from 2 hours of head-scratching that I did.
 
-p. There is a set of examples on how to do this without AngularJS in the "Charts API Documentation":1.
+p. There is a set of examples on how to do this without AngularJS in the "(tracked). Charts API Documentation":1.
 
 h2. Chart Layout Interface
 

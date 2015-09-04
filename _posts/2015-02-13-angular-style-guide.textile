@@ -14,7 +14,7 @@ p. Messy code is inevitable for inexperienced programmers.  You need to make a m
 
 h3. Enter the Style Guide
 
-p. My messy code was just reaching the point where it was noticeably affecting my productivity when I found the "Adventures in Angular":1 podcast.  In "one episode":5, the panel introduced an "AngularJS-specific coding style guide":2 posted on "GitHub":4 by "John Papa":3.
+p. My messy code was just reaching the point where it was noticeably affecting my productivity when I found the "(tracked). Adventures in Angular":1 podcast.  In "(tracked). one episode":5, the panel introduced an "(tracked). AngularJS-specific coding style guide":2 posted on "(tracked). GitHub":4 by "(tracked). John Papa":3.
 
 p. It wasn't some magic wand tool that I could wave and my code would be tidy. It was better than that.  It introduced certain concepts and patterns that would keep my code readable, understandable, and easy to maintain.  Every style rule also include examples of the pattern to be avoided, what could/should look like, and detailed explainations of why its better that way.  It helped me clean up my code and avoid writing any more messy code.
 
@@ -24,13 +24,13 @@ p. I had to screw up a little first in order to see the value of this guide, and
 
 h3. TL;DR
 
-p. Read John Papa's "AngularJS Style Guide":2.  It teaches you to write cleaner AngularJS code.
+p. Read John Papa's "(tracked). AngularJS Style Guide":2.  It teaches you to write cleaner AngularJS code.
 
 h3. Links
 
-* "AngularJS Style Guide":2
-* "Adventures in Angular Podcast":1
-** "Episode 18 - Style Guides":5
+* "(tracked). AngularJS Style Guide":2
+* "(tracked). Adventures in Angular Podcast":1
+** "(tracked). Episode 18 - Style Guides":5
 
 
 [1]http://devchat.tv/adventures-in-angular

@@ -7,27 +7,27 @@ tags: [Events, CodePenTo, Rangle.io, CodePen.io, Meetups]
 date: 2015-08-07 10:10:00
 ---
 
-p. I'm getting excited for "CodePenTo":1, coming Wednesday, August 12, 2015 in Toronto. This will be my first tech industry event, so I thought I'd tackle a mini-project. I think I'll stick with my usual subject-matter - "Angular-Google-Chart":5. But since this is a front-end focused crowd - at least I think they are - I'm going to work on something a little more designery. I don't have much of a design focus or skillset myself though, so wish me luck.
+p. I'm getting excited for "(tracked). CodePenTo":1, coming Wednesday, August 12, 2015 in Toronto. This will be my first tech industry event, so I thought I'd tackle a mini-project. I think I'll stick with my usual subject-matter - "(tracked). Angular-Google-Chart":5. But since this is a front-end focused crowd - at least I think they are - I'm going to work on something a little more designery. I don't have much of a design focus or skillset myself though, so wish me luck.
 
 p. The mini-project goal is to build a Google Chart with graphics overlayed onto the chart area. I've done this before for a work project, but it was kind of a hack. Now that I know how to make this work, I'll try to clean it up and make it more generic so that it can serve as an example project. I think I'll make this one Maple. Because... why not?
 
-p. In honour of the event sponsor - "CodePen.io":2 - I will be building this example in CodePen.  I've never use their service, so this will be a first. I signed up already and the project's very first building blocks are in place - nothing to see yet, but it's started. You can "check it out now":6, if you want to follow my progress.
+p. In honour of the event sponsor - "(tracked). CodePen.io":2 - I will be building this example in CodePen.  I've never use their service, so this will be a first. I signed up already and the project's very first building blocks are in place - nothing to see yet, but it's started. You can "(tracked). check it out now":6, if you want to follow my progress.
 
-p. I have been listening to the CodePen founders' "Podcast":3 for a few months now, and have enjoyed some bits of insight from an operating startup SaaS.
+p. I have been listening to the CodePen founders' "(tracked). Podcast":3 for a few months now, and have enjoyed some bits of insight from an operating startup SaaS.
 
-p. I actually discovered CodePenTo because I follow the event's other sponsor, "Rangle.io":4, on twitter.  I stumbled across Rangle.io on "Stack Overflow Careers":7, and was very impressed by their employee value proposition. From the outside the seem to have a very strong, forward-thinking company culture. The team looks to be very diverse, and with a focus on continuously learning, and teaching. Were I looking for a job right now, Rangle would be the first place I applied to.
+p. I actually discovered CodePenTo because I follow the event's other sponsor, "(tracked). Rangle.io":4, on twitter.  I stumbled across Rangle.io on "(tracked). Stack Overflow Careers":7, and was very impressed by their employee value proposition. From the outside the seem to have a very strong, forward-thinking company culture. The team looks to be very diverse, and with a focus on continuously learning, and teaching. Were I looking for a job right now, Rangle would be the first place I applied to.
 
 p. As an aside, I'm also thinking of putting some effort into the design of this site. This is a currently a very blah setup, and I was thinking of adding a bit of colour and a few graphics.
 
 h3. Links
-* "CodePenTo Event":1
+* "(tracked). CodePenTo Event":1
 * Sponsors:
-** "CodePen.io":2
-** "Rangle.io":4
-* "Rangle's Careers Page":7
-* "CodePen's Podcast":3
-* "Angular-Google-Chart":5
-* "My First Pen":6 - Work in Progress
+** "(tracked). CodePen.io":2
+** "(tracked). Rangle.io":4
+* "(tracked). Rangle's Careers Page":7
+* "(tracked). CodePen's Podcast":3
+* "(tracked). Angular-Google-Chart":5
+* "(tracked). My First Pen":6 - Work in Progress
 
 [1]https://nvite.com/CodePenTo/e92c
 [2]http://codepen.io/

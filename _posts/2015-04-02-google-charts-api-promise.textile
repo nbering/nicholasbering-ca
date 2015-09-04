@@ -7,11 +7,11 @@ tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
 date: 2015-04-02
 ---
 
-p. The Google Charts API must be loaded Asynchronously. So, when using the "angular-google-chart":1 directive, how can you tell when then API has become available to the controller?
+p. The Google Charts API must be loaded Asynchronously. So, when using the "(tracked). angular-google-chart":1 directive, how can you tell when then API has become available to the controller?
 
 h3. The Problem
 
-p. The "Angular-Google-Chart":1 directive is designed in such a way that you may never actually need direct access to the "Charts API":2.  But this simple case is pretty narrow.  If you need to use some of the advanced visualization features, or have need to manipulate or filter data, then you will need access to the Charts API directly.
+p. The "(tracked). Angular-Google-Chart":1 directive is designed in such a way that you may never actually need direct access to the "(tracked). Charts API":2.  But this simple case is pretty narrow.  If you need to use some of the advanced visualization features, or have need to manipulate or filter data, then you will need access to the Charts API directly.
 
 h3. The Promise
 
@@ -21,7 +21,7 @@ p. Now, to be more specific, the module is providing a promise that resolves whe
 
 h3. Simple Case
 
-p. This example simply instantiates a controller, which receives the "googleChartApiPromise":3 through dependency injection.  When the api has successfully loaded, the controller creates a new blank "DataTable":4 instance.
+p. This example simply instantiates a controller, which receives the "(tracked). googleChartApiPromise":3 through dependency injection.  When the api has successfully loaded, the controller creates a new blank "(tracked). DataTable":4 instance.
 
 {% highlight javascript %}
 (function (){
@@ -54,7 +54,7 @@ h3. $q.all()
 
 p. So the first example works very well for simple scenarios.  The next scenario is a solution for when you need to use the api to process some data, or just to run after some data has loaded.
 
-p. This example uses the "$q":6 service that comes built into "AngularJS":5 to wrap two promises together into a new promise that resolves when both promises have resolved.  This allows us to wait until both the Charts API and a request made with the "$http":7 service have resolved, and then do something with both.
+p. This example uses the "(tracked). $q":6 service that comes built into "(tracked). AngularJS":5 to wrap two promises together into a new promise that resolves when both promises have resolved.  This allows us to wait until both the Charts API and a request made with the "(tracked). $http":7 service have resolved, and then do something with both.
 
 {% highlight javascript %}
 (function(){
@@ -96,11 +96,11 @@ p. I was going to write about passing the googleChartsApiPromise as a resolve to
 
 h3. Links
 
-* "Angular Google Chart on GitHub":1
-* "Google Charts API Documentation":2
-* "AngularJS":5
-** "$q Service":6
-** "$http Service":7
+* "(tracked). Angular Google Chart on GitHub":1
+* "(tracked). Google Charts API Documentation":2
+* "(tracked). AngularJS":5
+** "(tracked). $q Service":6
+** "(tracked). $http Service":7
 
 [1]https://github.com/bouil/angular-google-chart
 [2]https://developers.google.com/chart/
