@@ -41,4 +41,4 @@ Here's the code:
 [1]{% post_url 2014-08-14-angular-google-chart %}
 [2]https://github.com/angular-google-chart/angular-google-chart/
 [3]https://developers.google.com/chart/
-[4]http://http://embed.plnkr.co/lOXTg5XRggwdctUedvfl/preview
+[4]http://embed.plnkr.co/lOXTg5XRggwdctUedvfl/preview
