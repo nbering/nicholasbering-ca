@@ -102,9 +102,9 @@ h3. Links
 ** "(tracked). $q Service":6
 ** "(tracked). $http Service":7
 
-[1]https://github.com/bouil/angular-google-chart
+[1]https://github.com/angular-google-chart/angular-google-chart
 [2]https://developers.google.com/chart/
-[3]https://github.com/bouil/angular-google-chart/blob/96a9b1d37c9d30d8666e45fe9d1255290d84951b/ng-google-chart.js#L37-78
+[3]https://github.com/angular-google-chart/angular-google-chart/blob/96a9b1d37c9d30d8666e45fe9d1255290d84951b/ng-google-chart.js#L37-78
 [4]https://developers.google.com/chart/interactive/docs/reference#DataTable
 [5]https://angularjs.org/
 [6]https://docs.angularjs.org/api/ng/service/$q

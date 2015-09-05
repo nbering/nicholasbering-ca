@@ -7,7 +7,7 @@ tags: [google-visualization, AngularJS, charts]
 date: 2015-02-10 23:41
 ---
 
-p. If you're not familiar with Material Design, have you been living under a rock?!  Just kidding.  Material Design is a pretty recent initiative from Google to unify design principles across all of their public-facing technologies.  Material Design is coming in some incarnation or other to "(tracked). Android":https://developer.android.com/design/material/index.html, "(tracked). AngularJS":https://material.angularjs.org/, and even the Google Charts API.  In this article I will cover how to use the two new charts with "(tracked). Angular-Google-Chart":https://github.com/bouil/angular-google-chart.
+p. If you're not familiar with Material Design, have you been living under a rock?!  Just kidding.  Material Design is a pretty recent initiative from Google to unify design principles across all of their public-facing technologies.  Material Design is coming in some incarnation or other to "(tracked). Android":https://developer.android.com/design/material/index.html, "(tracked). AngularJS":https://material.angularjs.org/, and even the Google Charts API.  In this article I will cover how to use the two new charts with "(tracked). Angular-Google-Chart":https://github.com/angular-google-chart/angular-google-chart.
 
 h3. Material Design Comes to Google Charts
 

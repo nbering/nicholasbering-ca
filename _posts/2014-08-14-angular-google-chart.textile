@@ -63,7 +63,7 @@ support it.
 "(tracked). View the example in Plunker":5
 
 [1]https://developers.google.com/chart/
-[2]https://github.com/bouil/angular-google-chart/
+[2]https://github.com/angular-google-chart/angular-google-chart/
 [3]https://github.com/bouil/
 [4]https://developers.google.com/chart/interactive/docs/gallery/controls
 [5]http://embed.plnkr.co/x9ttq50KYzuFSULNIX2L/preview
