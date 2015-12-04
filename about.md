@@ -9,9 +9,13 @@ My name is Nicholas Bering, and I'm a farmer that happens to be a self-taught pr
 Computer technologies I'm interested in include:
 
 * C# (.Net Framework)
+* Regular Expressions
 * SQL
 * ASP.Net Web API
+* JavaScript
+* TypeScript
 * AngularJS
+* NodeJS
 * HTML5
 * CSS3
 * Arduino
@@ -21,6 +25,8 @@ My Favourite Dev Tools are:
 
 * Visual Studio
 * Github's Atom
+* Visual Studio Code
+* Powershell
 
 GitHub Projects I've contributed to:
 
