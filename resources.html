@@ -1,0 +1,27 @@
+---
+layout: default
+permalink: /resources/
+title: Resources
+---
+
+
+<div class="home">
+{% for cat in site.collections.resources.categories %}
+
+<h1>{{ cat }}</h1>
+
+    <ul class="posts">
+
+    {% assign links = site.resources | where: 'category', cat %}
+    {% for link in links %}
+    <li>
+         <a class="post-link tracked" href="{{ link.address }}">{{ link.title }}</a>
+         <p>
+             {{link.content}}
+         </p>
+    </li>
+    {% endfor %}
+
+    </ul>
+{% endfor %}
+</div>

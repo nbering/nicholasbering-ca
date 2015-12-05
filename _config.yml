@@ -8,7 +8,17 @@ url: "http://nicholasbering.ca"
 twitter_username: Balrog30
 github_username:  Balrog30
 
+exclude:
+    - .c9
+
 # Build settings
 markdown: kramdown
 permalink: pretty
 highlighter: pygments
+
+collections:
+    resources:
+        output: false
+        categories:
+            - "AngularJS Modules"
+            - "Development Tools"
