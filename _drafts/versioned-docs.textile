@@ -1,0 +1,59 @@
+---
+layout: Post
+title: Versioned Documentation with Jekyll
+category: Jekyll
+tags: [Jekyll, GitHub, Open-Source, Documentation]
+---
+
+p. This summer I was doing some work on Angular Google Chart, and ran into a little
+issue. The project's original creator had built it so that all work was done on
+the gh-pages branch. This meant that if I pushed a breaking change, or a bug, it
+would break the documentation site.
+
+p. So, I restructured the git repo to use a git-flow module, with a separate documentation
+branch, with it's own isolated history, served with Github-Pages.
+
+h2. Enter Dr. Jekyll
+
+p. Jekyll is a static site builder, written in ruby. If the gh-pages branch of your
+Github Repository is a Jekyll project, when you push updates GitHub will automatically
+build the site with Jekyll and serve the built site, rather than the raw content.build
+
+p. Jekyll supports processing a number of text markup languages to HTML, as well as
+syntax highlighting and a few other cool features.
+
+p. Jekyll has it's complications, but I went with Jekyll for the Angular Google Chart
+documentation because it helped handle all the page layout rendering without having
+to build the docs site as an SPA.
+
+h2. Atomic Research
+
+p. I was looking for a way to write versioned docs with Jekyll, and stumbled across
+the documention to Electron, the application shell for the Atom editor. They were
+using a Jekyll collection to hold the API documentation, with a folder for each version.
+
+p. Each page has a version key, which is used to help render the contents pages for each
+version. I used it for more than that, but we'll get to that later.
+
+p. The current version's docs are duplicated into the "latest" folder, allowing you
+to have links like /docs/latest/examples. This is a bit annoying from a maintenance
+perspective. Electron handles this with some project-specific scripts. Unfortunately,
+their scripts did a lot more than managing the versions, so I couldn't really borrow
+them.
+
+h2. Isolated Examples
+
+p. Jekyll's YAML headers came in real handy for setting up the interactive examples
+pages. I added some meta-data to the examples pages that reference the JavaScript
+files. The page layout adds the script tags to the page with liquid templates.
+
+p. Combined with Cdnjs.com hosting of all the project versions, the layout adds the correct
+version of the Angular Google Chart library from the CDN for the project version
+by the version key in the frontmatter. Also, by not using Angular's routing as the
+project's original documentation had, broken code in one example page will not affect
+the rest of the site. And multiple versions of AngularJS and Angular Google Chart can be
+used in tandem.
+
+h3. Link to the Latest
+
+p. Copy of the files in the base folder so that the link appears in the menu.
