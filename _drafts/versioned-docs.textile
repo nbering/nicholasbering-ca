@@ -1,5 +1,5 @@
 ---
-layout: Post
+layout: post
 title: Versioned Documentation with Jekyll
 category: Jekyll
 tags: [Jekyll, GitHub, Open-Source, Documentation]
@@ -29,17 +29,194 @@ to build the docs site as an SPA.
 h2. Atomic Research
 
 p. I was looking for a way to write versioned docs with Jekyll, and stumbled across
-the documention to Electron, the application shell for the Atom editor. They were
+the documention to Electron, the application shell for the Atom editor. They are
 using a Jekyll collection to hold the API documentation, with a folder for each version.
 
-p. Each page has a version key, which is used to help render the contents pages for each
-version. I used it for more than that, but we'll get to that later.
+https://github.com/atom/electron.atom.io
 
-p. The current version's docs are duplicated into the "latest" folder, allowing you
-to have links like /docs/latest/examples. This is a bit annoying from a maintenance
-perspective. Electron handles this with some project-specific scripts. Unfortunately,
-their scripts did a lot more than managing the versions, so I couldn't really borrow
-them.
+p. The folder structure ends up looking something like this:
+
+{% highlight bash %}
+.
+├── _config.yml
+├── _docs
+│   ├── 0.0.11
+│   │   ├── README.md
+│   │   ├── directives/
+│   │   │   └── googleChart.md
+│   │   ├── directives.md
+│   │   ├── examples/
+│   │   │   ├── annotation.html
+│   │   │   ├── annotation.js
+│   │   │   ├── bar.html
+│   │   │   ├── bar.js
+│   │   │   ├── column.html
+│   │   │   ├── column.js
+│   │   │   ├── gauge.html
+│   │   │   ├── gauge.js
+│   │   │   ├── hide-series.html
+│   │   │   ├── hide-series.js
+│   │   │   ├── multi-chart.html
+│   │   │   ├── multi.js
+│   │   │   ├── pie.html
+│   │   │   └── pie.js
+│   │   ├── examples.md
+│   │   ├── guides/
+│   │   │   └── getting-started.md
+│   │   ├── guides.md
+│   │   ├── providers/
+│   │   │   └── googleJsapiUrl.md
+│   │   ├── providers.md
+│   │   ├── services/
+│   │   │   └── googleChartApiPromise.md
+│   │   ├── services.md
+│   │   ├── values/
+│   │   │   └── googleChartApiConfig.md
+│   │   └── values.md
+│   ├── 0.1.0
+│   │   ├── README.md
+│   │   ├── directives/
+│   │   │   ├── agcBeforeDraw.md
+│   │   │   ├── agcOnError.html
+│   │   │   ├── agcOnMouseout.md
+│   │   │   ├── agcOnMouseover.md
+│   │   │   ├── agcOnReady.md
+│   │   │   ├── agcOnSelect.html
+│   │   │   └── googleChart.md
+│   │   ├── directives.md
+│   │   ├── examples/
+│   │   │   ├── annotation.html
+│   │   │   ├── annotation.js
+│   │   │   ├── bar.html
+│   │   │   ├── bar.js
+│   │   │   ├── column.html
+│   │   │   ├── column.js
+│   │   │   ├── gauge.html
+│   │   │   ├── gauge.js
+│   │   │   ├── hide-series.html
+│   │   │   ├── hide-series.js
+│   │   │   ├── multi-chart.html
+│   │   │   ├── multi.js
+│   │   │   ├── pie.html
+│   │   │   └── pie.js
+│   │   ├── examples.md
+│   │   ├── guides
+│   │   │   └── getting-started.md
+│   │   ├── guides.md
+│   │   ├── providers/
+│   │   │   └── googleJsapiUrl.md
+│   │   ├── providers.md
+│   │   ├── services/
+│   │   │   └── googleChartApiPromise.md
+│   │   ├── services.md
+│   │   ├── values/
+│   │   │   └── googleChartApiConfig.md
+│   │   └── values.md
+│   └── latest
+│       ├── README.md
+│       ├── directives/
+│       │   ├── agcBeforeDraw.md
+│       │   ├── agcOnError.html
+│       │   ├── agcOnMouseout.md
+│       │   ├── agcOnMouseover.md
+│       │   ├── agcOnReady.md
+│       │   ├── agcOnSelect.html
+│       │   └── googleChart.md
+│       ├── directives.md
+│       ├── examples/
+│       │   ├── annotation.html
+│       │   ├── annotation.js
+│       │   ├── bar.html
+│       │   ├── bar.js
+│       │   ├── column.html
+│       │   ├── column.js
+│       │   ├── gauge.html
+│       │   ├── gauge.js
+│       │   ├── hide-series.html
+│       │   ├── hide-series.js
+│       │   ├── multi-chart.html
+│       │   ├── multi.js
+│       │   ├── pie.html
+│       │   └── pie.js
+│       ├── guides/
+│       │   └── getting-started.md
+│       ├── guides.md
+│       ├── providers/
+│       │   └── googleJsapiUrl.md
+│       ├── providers.md
+│       ├── services/
+│       │   └── googleChartApiPromise.md
+│       ├── services.md
+│       ├── values/
+│       │   └── googleChartApiConfig.md
+│       └── values.md
+├── _includes/
+├── _layouts/
+├── _posts/
+├── css/
+├── examples.md
+├── index.html
+└── versions.md
+{% endhighlight %}
+
+p. Ok. This is a bit much to show (and I removed a couple versions to simplify the
+view). I thought I'd leave it verbose like this to demonstrate the one downside.
+With this approach, we're keeping every version of the documentation in the repository
+at the same time. But that's kind of the point. We want all versions of documentation
+to be on the website at the same time. If that's not your goal, I wouldn't recommend
+this setup. It does make more maintenance work in the long-run.
+
+h3. Config
+
+p. Now that we see how the folder structure works, let's take a look at how to set
+things up in the files. First, we'll need to add some things to @_config.yml@.
+
+{% highlight yaml %}
+latest_version: 0.1.0
+available_versions:
+    - 0.1.0
+    - 0.1.0-beta.2
+    - 0.1.0-beta.1
+    - 0.0.11
+
+collections:
+    docs:
+        output: true
+        permalink: "docs/:path/"
+{% endhighlight %}
+
+p. @latest_version@ and @available_versions@ refer to the versions of the documentation.
+These values are for us to generate contents pages and @latest_version@ helps
+to generate links to the correct version for version-neutral pieces of the site.
+
+p. The @collections@ section is related to the collections feature of Jekyll.
+@docs@ becomes the name of our collection, @output: true@ means the documents will
+be rendered to the site as files. There is another way to work with collections
+where the entries just exist as data to use in liquid templates. We want files.
+@permalink: "docs/:path/"@ tells jekyll how to structure the URL for our collection
+pages.
+
+h3. Versions List
+
+To make a version list available, @./versions.md@ is added. 
+
+
+bc.. {% raw %}---
+layout: default
+permalink: /docs/
+title: Docs
+---
+# Versions
+
+{% for version in site.available_versions %}
+##### [{{ version }}]({{ site.baseurl l}}/docs/{{ version }}/)
+{% endfor %}
+{% endraw %}
+
+p. Because this file is a plain page, with yaml frontmatter in the project root
+(not in a collection), Jekyll pics it up and adds it to the site menu, if we're
+using something like the default site layout. This is exactly what I wanted,
+which is why it's call "Docs", and not "Versions."
 
 h2. Isolated Examples
 
