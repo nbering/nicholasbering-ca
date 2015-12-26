@@ -1,7 +1,7 @@
-balrog30.github.io
+nbering.github.io
 ==================
 
-User website for Balrog30. Accessible from the registered domain http://nicholasbering.ca/
+User website for @nbering. Accessible from the registered domain http://nicholasbering.ca/
 
 ## Feature Ideas
 
