@@ -6,7 +6,7 @@ description: "Nicholas Bering is a self-taught software developer. He currently 
 baseurl: ""
 url: "http://nicholasbering.ca"
 twitter_username: Balrog30
-github_username:  Balrog30
+github_username:  nbering
 
 exclude:
     - .c9
