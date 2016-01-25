@@ -10,6 +10,11 @@ github_username:  nbering
 
 exclude:
     - .c9
+    - CNAME
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
 
 # Build settings
 markdown: kramdown

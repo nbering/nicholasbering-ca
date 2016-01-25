@@ -10,6 +10,7 @@
     {% endif %}
   </title>
   <meta name="viewport" content="width=device-width">
+  {% feed_meta %}
   <meta content="{{ site.title }}" property="og:site_name">
   {% if page.title %}
     <meta content="{{ page.title }}" property="og:title">
@@ -49,6 +50,6 @@
   {% endif %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/bootstrap.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
 </head>
