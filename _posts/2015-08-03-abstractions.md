@@ -4,6 +4,8 @@ title: Abstractions
 description: My random ramblings on the nature of abstraction.
 category: rambling
 date: 2015-08-03
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
+author: Nicholas Bering
 ---
 
 > I wrote this a few months ago. At 1am. In a coffee shop. I haven't published anything

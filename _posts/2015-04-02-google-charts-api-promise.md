@@ -5,6 +5,7 @@ description: The Google Charts API must be loaded asynchronously, so how can you
 category: AngularJS
 tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
 date: 2015-04-02
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

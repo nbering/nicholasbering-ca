@@ -4,6 +4,7 @@ title: AngularJS Style Guide
 description: Short article highlighting a coding style guide by John Papa.  The helpful open-source guide is hosted on github.
 category: AngularJS
 tags: [AngularJS, style-guide]
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

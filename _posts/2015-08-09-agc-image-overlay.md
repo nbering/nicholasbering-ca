@@ -5,6 +5,7 @@ description: An example of how to position images on the chart area relative to 
 category: AngularJS
 tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
 date: 2015-08-09
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

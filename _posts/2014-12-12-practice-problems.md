@@ -4,6 +4,7 @@ title: Practice Problems
 description: There has been some increasing attention to the idea of coding practice.  Whether it's to prepare for an interview, or to prove you're the best, coding practice problems is a great way to hone you're programming skills.  Here are a few sites that provide free practice problems.
 category: programming
 date: 2014-12-12 22:46
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

@@ -5,6 +5,7 @@ description: A Google Visualization DataTable wrapper for building google chart 
 category: dot-net
 tags: [google-visualization, asp.net]
 date: 2014-10-24 23:31:00
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

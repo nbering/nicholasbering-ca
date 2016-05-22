@@ -5,6 +5,7 @@ description: An introduction to my favourite pair of tools for adding dynamic Ja
 category: AngularJS
 tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
 date: 2014-08-14 13:49:00
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

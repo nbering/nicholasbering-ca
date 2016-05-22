@@ -4,6 +4,7 @@ title: "Visual Studio Quick Tip: Show All Files"
 description: A little feature of solution explorer that I let go unnoticed for years, that I couldn't live without.
 category: visual-studio
 date: 2015-08-26
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

@@ -5,6 +5,7 @@ description: I'm getting excited for CodePenTo next wednesday, so I thought I'd 
 category: Events
 tags: [Events, CodePenTo, Rangle.io, CodePen.io, Meetups]
 date: 2015-08-07 10:10:00
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

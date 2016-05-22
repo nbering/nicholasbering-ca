@@ -5,6 +5,7 @@ description: I was recently working with the Azure Resource Management API in No
 category: Azure
 tags: [Azure, Azure-ARM, NodeJS]
 date: 2016-01-12
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 

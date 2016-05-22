@@ -5,6 +5,7 @@ category: AngularJS
 tags: [AngularJS, Google-Charts-API, Google-Visualization, Angular-Google-Chart]
 description: In my previous post - Google Charts Directive for AngularJS - I introduced the Angular-Google-Chart Project.  In this post I'm going to skip some of the basics and go straight to something advanced that I found to be in demand for both this directive and the Google Charts API in general.
 date: 2014-08-16 15:53:00
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 In my previous post - <a class="tracked" href="{% post_url 2014-08-14-angular-google-chart %}">Google Charts Directive for AngularJS</a> - I introduced

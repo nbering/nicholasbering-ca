@@ -5,6 +5,7 @@ description: A short how-to of using the Google Charts API's new Material Design
 category: AngularJS
 tags: [google-visualization, AngularJS, charts]
 date: 2015-02-10 23:41
+last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 
