@@ -19,6 +19,10 @@ highlighter: rouge
 gems:
   - jekyll-last-modified-at
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
 
 collections:
     resources:
