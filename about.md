@@ -16,6 +16,7 @@ Computer technologies I'm interested in include:
 * TypeScript
 * AngularJS
 * NodeJS
+* Electron
 * HTML5
 * CSS3
 * Arduino
@@ -30,4 +31,4 @@ My Favourite Dev Tools are:
 
 GitHub Projects I've contributed to:
 
-* [Angular Google Charts](https://github.com/bouil/angular-google-chart)
+* [Angular Google Charts](https://github.com/angular-google-chart/angular-google-chart/)
