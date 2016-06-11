@@ -56,3 +56,23 @@ $scope.myChartObject.options = {
 ```
 
 ### Material
+
+```js
+// Insert example code block here.
+```
+
+## Examples
+
+### Classic
+
+`Insert CodePen Embed Here`
+
+### Material
+
+`Insert CodePen Embed Here`
+
+## Conclusion
+
+Dual-Y charts are great for representing relationships in data that is recorded in on different scales, but they can be a bit confusing, so they should not be over-used.
+
+## Links
