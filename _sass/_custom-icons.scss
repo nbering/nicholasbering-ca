@@ -1,17 +1,14 @@
----
----
 @charset "UTF-8";
 
 @font-face {
   font-family: "nb-blog-icons";
-  src:url("{{ "/fonts/nb-blog-icons.eot" | prepend: site.baseurl }}");
-  src:url("{{ "/fonts/nb-blog-icons.eot?#iefix" | prepend: site.baseurl }}") format("embedded-opentype"),
-    url("{{ "/fonts/nb-blog-icons.woff" | prepend: site.baseurl }}") format("woff"),
-    url("{{ "/fonts/nb-blog-icons.ttf" | prepend: site.baseurl }}") format("truetype"),
-    url("{{ "/fonts/nb-blog-icons.svg#nb-blog-icons" | prepend: site.baseurl }}") format("svg");
+  src: url(#{$baseurl}/fonts/nb-blog-icons.eot);
+  src: url(#{$baseurl}/fonts/nb-blog-icons.eot?#iefix) format("embedded-opentype"),
+    url(#{$baseurl}/fonts/nb-blog-icons.woff) format("woff"),
+    url(#{$baseurl}/fonts/nb-blog-icons.ttf) format("truetype"),
+    url(#{$baseurl}/fonts/nb-blog-icons.svg#nb-blog-icons) format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {
