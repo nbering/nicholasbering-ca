@@ -2,11 +2,14 @@
 layout: default
 permalink: /resources/
 title: Resources
+resource_categories:
+    - "AngularJS Modules"
+    - "Development Tools"
 ---
 
 
 <div class="home">
-{% for cat in site.collections.resources.categories %}
+{% for cat in page.resource_categories %}
 
 <h1>{{ cat }}</h1>
 

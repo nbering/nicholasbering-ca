@@ -27,6 +27,3 @@ whitelist:
 collections:
     resources:
         output: false
-        categories:
-            - "AngularJS Modules"
-            - "Development Tools"
