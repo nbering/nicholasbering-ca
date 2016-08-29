@@ -10,6 +10,11 @@
     {% endif %}
   </title>
   <meta name="viewport" content="width=device-width">
+  {% if page.twitter_card %}
+    <meta content="{{ page.twitter_card }}" name="twitter:card">
+  {% else %}
+    <meta content="summary" name="twitter:card">
+  {% endif %}
   <meta content="{{ site.title }}" property="og:site_name">
   {% if page.title %}
     <meta content="{{ page.title }}" property="og:title">
@@ -19,6 +24,9 @@
     <meta content="article" property="og:type">
   {% else %}
     <meta content="website" property="og:type">
+  {% endif %}
+  {% if site.twitter_username %}
+    <meta content="{{ site.twitter_username }}" name="twitter:site">
   {% endif %}
   {% if page.description %}
     <meta content="{{ page.description }}" property="og:description">
