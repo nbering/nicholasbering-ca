@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.wrap:before,
+.wrap:after { content:""; display:table; }
+.wrap:after { clear: both; }
+.wrap {
+  max-width: 800px;
+  padding: 0 30px;
+  margin: 0 auto;
+  zoom: 1;
+
+  @media screen and (max-width: $break-medium) {
+      padding: 0 12px;
+  }
+}

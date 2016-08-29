@@ -1,6 +1,22 @@
 ---
 ---
 $baseurl: "{{site.baseurl}}";
+$break-biggest: 750px;
+$break-medium: 600px;
 
-@import "base";
+$primary: #af231c;
+$secondary: #666666;
+$cold-compliment: #1da8af;
+$warm-compliment: #af921d;
+
+@import "resets";
+@import "wrap";
+@import "site-header";
+@import "footer";
+@import "page-content";
+@import "home";
+@import "post";
+@import "highlight";
+@import "nuget";
+@import "image-frame";
 @import "custom-icons";
