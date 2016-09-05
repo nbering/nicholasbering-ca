@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.social-buttons {
+    display: relative;
+
+    > .g-plusone-wrapper {
+        display: inline-block;
+        top: 7px;
+        position: relative;
+    }
+}
