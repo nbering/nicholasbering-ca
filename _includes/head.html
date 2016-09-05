@@ -15,6 +15,9 @@
   {% else %}
     <meta content="summary" name="twitter:card">
   {% endif %}
+  {% if site.facebook_app_id %}
+    <meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
+  {% endif %}
   <meta content="{{ site.title }}" property="og:site_name">
   {% if page.title %}
     <meta content="{{ page.title }}" property="og:title">

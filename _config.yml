@@ -7,6 +7,7 @@ baseurl: ""
 url: "http://nicholasbering.ca"
 twitter_username: nickbering
 github_username:  nbering
+facebook_app_id: "1714325992123311"
 
 exclude:
     - .c9
