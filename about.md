@@ -35,7 +35,7 @@ one form or another, I have a keen understanding of business needs.
 I am equally comfortable programming, or running infrastructure for a project. Setup of virtual
 machines and platform services on Microsoft Azure and Amazon Web Services has often been my
 responsiblility. I've also setup processes for dev-test, continuous integration, and continuous
-deployment scenarios using tools from a variable of solutions vendors.
+deployment scenarios using tools from a variety of solutions vendors.
 
 I always start my project with the end in mind, so I generally build out basic deployment processes
 and a staging environment as early in a project as is practical. This has the added benefit of
