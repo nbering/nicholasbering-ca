@@ -1,0 +1,21 @@
+.availability-box{
+    width: 100%;
+    div {
+        background-color: $secondary;
+        border-radius: 12px;
+        padding: 3px;
+        margin: auto;
+        div {
+            border-style: dotted;
+            border-color: $warm-compliment;
+            border-radius: 9px;
+            text-align: center;
+            color: white;
+            font-size: 12pt;
+
+            span {
+                font-size: 16pt;
+            }
+        }
+    }
+}
