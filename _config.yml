@@ -28,3 +28,12 @@ whitelist:
 collections:
     resources:
         output: false
+    decks:
+      output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "decks"
+    values:
+      layout: "reveal"

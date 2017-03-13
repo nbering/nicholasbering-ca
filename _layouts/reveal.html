@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include meta.html %}
+  <link rel="stylesheet" href='{{ "/css/reveal.css" | prepend: site.baseurl | prepend: site.url }}'>
+  <link rel="stylesheet" href='{{ "/css/theme/white.css" | prepend: site.baseurl | prepend: site.url }}'>
+</head>
+<body>
+  {{ content }}
+  <script type="text/javascript" src='{{ "/js/reveal.js" | prepend: site.baseurl | prepend: site.url }}'></script>
+  <script>
+    Reveal.initialize();
+  </script>
+  {% include ga.html %}
+
+</body>
+</html>
