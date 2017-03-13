@@ -1,0 +1,137 @@
+---
+---
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h3>
+                Software Niagara
+            </h3>
+            <p>
+                presents
+            </p>
+            <p>
+                <img src='{{ "/images/devtricks.svg" | prepend: site.baseurl | prepend: site.url }}'
+                    class="plain">
+            </p>
+            <p>
+                46<sup style="font-size: 0.5em;">th</sup> Monthly Meet-up on Monday, March 23, 2017
+            </p>
+        </section>
+        <section>
+            <h1>
+                Fail-Safes
+            </h1>
+            <h3>
+                in Software and Systems Design
+            </h3>
+            <img src='{{ "/images/logo.svg" | prepend: site.baseurl | prepend: site.url }}'
+                class="plain"
+                style="width:20%;">
+            <p>
+                by Nicholas Bering
+            </p>
+            <a href="{{site.url}}">{{site.url}}</a>
+        </section>
+        <section>
+            <h3>fail-safe</h3>
+            <p style="text-align: left;">
+                <i>adjective</i>
+            </p>
+            <ol>
+                <li>causing a piece of machinery or other mechanism to revert to a safe condition in the event of a breakdown or malfunction.</li>
+            </ol>
+            <p style="text-align: left;">
+                <i>noun</i>
+            </p>
+            <ol>
+                <li>a system or plan that comes into operation in the event of something going wrong or that is there to prevent such an occurence.</li>
+            </ol>
+        </section>
+        <section>
+            <h3>
+                Recognize the Possibility
+            </h3>
+            <p>
+                Fail-safe systems are not necessarily designed to prevent a failure.
+                tTey are designed to prevent the consquences of the failure from becoming
+                dangerous or causing collateral damage.
+            </p>
+        </section>
+        <section>
+            <h1>
+                Failure Mode and Effects Analysis (FMEA)
+            </h1>
+        </section>
+        <section>
+            <p>
+                FMEA is a formal analysis framework, used often by engineers of crticial systems
+                such as flight systems. Considers:
+            </p>
+            <ul>
+                <li>Failure Mode</li>
+                <li>Potential Causes</li>
+                <li>Effects of Failure</li>
+                <ul>
+                    <li>Locally</li>
+                    <li>On Related Components</li>
+                    <li>On the Entire System</li>
+                </ul>
+            </ul>
+        </section>
+        <section>
+            <p>
+                After analyzing the effects of a possible failure, engineers would determine...
+            </p>
+            <ul>
+                <li>Probability of Failure</li>
+                <li>Severity of Failure</li>
+                <li>Ease of Detection</li>
+                <ul>
+                    <li>Including the period in which it is likely to go undetected.</li>
+                </ul>
+            </ul>
+        </section>
+        <section>
+            This information is used to calculate the risk level as:
+        </section>
+        <section>
+            <h3>
+                Passive Fail-Safe
+            </h3>
+            <h5>
+                Physical Example
+            </h5>
+            <p>
+                Braking systems on trains work by using air pressure to release the
+                brake while the train is in motion. If air pressure is lost, the
+                brakes will automatically engage, bringing the train car to a stop.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Passive Fail-Safe
+            </h3>
+            <h5>
+                Web Design Example
+            </h5>
+            <ul>
+                <li>
+                    A &lt;noscript&gt; tag can be used to provide alternate content
+                    or instructions if their browser does not support JavaScript.
+                </li>
+                <li>
+                    Use a Progressive Enhancement design methodology, such that a
+                    web page will work correctly with limited browser features,
+                    but additional features may be used if they are detected.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h1>Thank You</h1>
+            <ul>
+                <li>Slides: <a href="{{ "/decks/fail-safe/" | prepend: site.baseurl | prepend: site.url }}">{{ "/decks/fail-safe/" | prepend: site.baseurl | prepend: site.url }}</a></li>
+                <li>Twitter: <a href="https://twitter.com/{{site.twitter_username}}">@{{site.twitter_username}}</a>
+            </ul>
+        </section>
+    </div>
+</div>
