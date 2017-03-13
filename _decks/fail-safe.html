@@ -53,7 +53,7 @@
             </h3>
             <p>
                 Fail-safe systems are not necessarily designed to prevent a failure.
-                tTey are designed to prevent the consquences of the failure from becoming
+                They are designed to prevent the consquences of the failure from becoming
                 dangerous or causing collateral damage.
             </p>
         </section>
@@ -92,7 +92,23 @@
             </ul>
         </section>
         <section>
-            This information is used to calculate the risk level as:
+            <p>
+                This information is used to calculate the risk level as:
+            </p>
+            <p>
+                <strong>Probability &times; Severity + Detection</strong>
+            </p>
+            <p>
+                Assessing risk in this way allows an engineering team to objectively
+                score items to determine which potential failures receive priority.
+            </p>
+        </section>
+        <section>
+            <p>
+                Risks that have been identified and scored will usually also have a documented
+                plan or action and a procedure to help mitigate the risk. This might be something
+                as simple as documenting the risk.
+            </p>
         </section>
         <section>
             <h3>
@@ -125,6 +141,102 @@
                     but additional features may be used if they are detected.
                 </li>
             </ul>
+        </section>
+        <section>
+            <h3>
+                Active Fail-Safe
+            </h3>
+            <h5>
+                Physical Example
+            </h5>
+            <ul>
+                <li>
+                    The Emergency Brake on a car uses a cable instead of hydraulics to
+                    engage the brake. It requires the driver to actively engage the
+                    safety mechanism. This is also a type of redundancy.
+                </li>
+                <li>
+                    Air bags receive a signal from a sensor in the engine compartment
+                    to deploy during a collision. If the car's electrical systems failed
+                    before the collision they may not deploy.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>
+                Active Fail-Safe
+            </h3>
+            <h5>
+                Web Design Example
+            </h5>
+            <ul>
+                <li>
+                    Browser feature shims that patch deficiencies in a browser feature
+                    set to keep the application from breaking because of missing features.
+                </li>
+                <li>
+                    As script that checks to see if all JavaScript dependencies loaded correctly
+                    before starting application code. If something is missing, dynamicly adds
+                    an additional tag to an alternate source for the same library.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>
+                Active Fail-Safe
+            </h3>
+            <h5>
+                Web Infrastructure Example
+            </h5>
+            <ul>
+                <li>
+                    An Amazon EC2 Auto-Scaling pool with one server. If the server fails health checks
+                    or becomes unreachable, the auto-scaling logic starts a replacement server and fails-over
+                    to it.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>General Strategies</h3>
+            <ul>
+                <li>Redundancy</li>
+                <ul>
+                    <li>Clustered Servers</li>
+                    <li>Raid Arrays</li>
+                    <li>Geo-Redundancy</li>
+                    <li>Status Page on Separate Site</li>
+                </ul>
+            </url>
+        </section>
+        <section>
+            <h3>General Strategies</h3>
+            <ul>
+                <li>Circuit Breakers</li>
+                <ul>
+                    <li>Rate Limited APIs</li>
+                    <li>System Outage Page Served by Load Balancer</li>
+                    <li>Software that Restarts Gracefully on an Unhandled Exception</li>
+                </ul>
+            </url>
+        </section>
+        <section>
+            <h3>General Strategies</h3>
+            <ul>
+                <li>Procedural Fail-Safes</li>
+                <ul>
+                    <li>Backups Before Upgrades</li>
+                    <li>Blue-Green Deployments</li>
+                    <li>Active Fail-Over Scenarios</li>
+                </ul>
+            </url>
+        </section>
+        <section>
+            <h3>Detection and Logging</h3>
+            <ul>
+                <li>It's dificult to fix something if you can't detect that it's broken.</li>
+                <li>Logging and error reporting systems help to detect a problem early.</li>
+                <li>Undetected failures are more likely to cause long-term collateral damange.</li>
+            </p>
         </section>
         <section>
             <h1>Thank You</h1>
