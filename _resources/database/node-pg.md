@@ -6,7 +6,7 @@ category: "Database Tools and Libraries"
 ---
 This is the defacto standard for postgres drivers in Node. There are a number
 of convenience layers built on top of node-pg, but I personally like to work
-directly of with drive for my data access layer.
+directly in raw SQL for my data access layer.
 
 node-pg directly handles a number of essential features for a SQL database
 driver, including query parameterization.
