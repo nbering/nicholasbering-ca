@@ -5,6 +5,7 @@ title: Resources
 resource_categories:
     - "AngularJS Modules"
     - "Development Tools"
+    - "Database Tools and Libraries"
 ---
 
 
@@ -17,7 +18,7 @@ resource_categories:
 
     {% assign links = site.resources | where: 'category', cat %}
     {% for link in links %}
-    <li>
+    <li class="post-content">
          <a class="post-link tracked" href="{{ link.address }}">{{ link.title }}</a>
          <p>
              {{link.content}}
