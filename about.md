@@ -5,30 +5,13 @@ permalink: /about/
 ---
 
 My name is Nicholas Bering, and I live in Saint Catharines, Ontario. I've been interested in web and
-software development as a hobby and passion since about grade 7, just before the first dot com boom.
+software development as a hobby and passion since about grade 7 (circa 1998).
 
 I didn't pursue software development as a career out of school because I didn't want the cubicle life.
 Obviously, things have changed a lot in the industry today, and am happy to have found a career where I
 can particpate equally well without being chained to any particular desk. I switched from a career in
 Agriculture to Software Development in Octover 2015, but have been developing software as part of my
 job description since 2012.
-
-## Freelance Strengths
-
-I contribute best as a full-stack JavaScript developer. I can do a little bit of design, and have a subscrption
-to Adobe CC for when I need graphical tools, but my strength is on the logical level more than the visual.
-
-I work as a freelancer, and am comfortable working remote. I use the tools my clients are comfortable
-with to communicate. Telephone, Email, Slack, Skype, Google Hangouts... Wherever you're comfortable - I can meet you there.
-
-I work wherever the mood strikes me to be. I do some work from home, but I'm also a member of a local
-coworking co-operative. It gives me a place to go work away from my wife and daughters, but there's
-also other software developers there that I can occasionally bounce ideas off of when I need a second
-opinion or am stuck on something.
-
-I am good at self-managing, and while I am not generally a team manager, I can help keep a team on track
-by identifying project risks. Having lived most of my life around business ownership and management in
-one form or another, I have a keen understanding of business needs.
 
 ## Operations
 
@@ -61,6 +44,9 @@ to complete a project, using the best tool for the job. Here's just a sampling o
 with to solve real business problems in the past:
 
 * C# (.Net Framework)
+* Python
+* Ruby
+* Go-lang
 * Regular Expressions
 * SQL (PostgreSQL and Microsoft SQL Server)
 * ASP.Net Web API
@@ -75,14 +61,11 @@ with to solve real business problems in the past:
 * HTML5
 * CSS3
 * SASS
-* Eagle CAD
-* Basic Digital and Analog Circuit Design
-* Arduino
-* Raspberry Pi
 * Google Cast
 * Ansible
+* Terraform
 * Ubuntu Linux
-* Cloud Infrastructure (AWS, Azure)
+* Cloud Infrastructure (AWS, Azure, BlueMix)
 * HAProxy
 * Zebra Printers (ZPL Label Design)
 * Asterisk PBX
