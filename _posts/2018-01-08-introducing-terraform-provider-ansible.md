@@ -2,11 +2,11 @@
 layout: post
 title: "Introducing: Terraform Provider for Ansible"
 description: |
-    Officially announcing a little side-project I've been working on for a few months.
+    Officially announcing a little side-project I've been working on for a few months, to integrate Terraform and Ansible into a simplified workflow.
 category: tools
 tags: [tools, terraform, ansible]
 author: Nicholas Bering
-date: 2018-01-07
+date: 2018-01-08
 ---
 ## Why an Ansible provider for Terraform?
 As part of our day-to-day workflow at [MedStack][1], we use [Terraform][2] and [Ansible][3]. I did some work early on to manage infrastructure with Ansible, but we found - for our team anyway - that it wasn't a great fit for our workflow. So we brought in Terraform to manage infrastructure, and then Ansible takes over to manage guest machine configuration and software deployment.
