@@ -28,7 +28,7 @@ In looking around for solutions, I had also come across [jonmorehouse/terraform-
 ### Dynamic Inventory (on it's own)
 Another solution I evaluated was [Terraform Dynamic Inventory for Ansible][10]. This again might work for a lot of people, but when I first looked at this almost a year ago, it was limited to Amazon EC2.
 
-It also relies heavily on the tag systems that are part of the cloud providers' APIs. It just doesn't feel like it will scale well, and you're depending on the managed infrastructure to store details about the configuration used to manage it. There's also too much possibility of someone accidently deploying resources with a matching or conflicting tag and causing a mess of accidental changes.
+It also relies heavily on the tag systems that are part of the cloud providers' APIs. It just doesn't feel like it will scale well, and you're depending on the managed infrastructure to store details about the configuration used to manage it. There's also too much possibility of someone accidentally deploying resources with a matching or conflicting tag and causing a mess of accidental changes.
 
 Last, it also opened up the question for me... *What is a server anyway?*
 
@@ -70,7 +70,7 @@ One of the benefits with this is that the `inventory_hostname` can be interpolat
 - `azurerm_public_ip.example.fqdn`
 - `cloudflare_record.example.hostname`
 
-We can also set some of the properties for the ansbile connection based on the Terraform configuration, so that your more-or-less static Ansible configuration doesn't need to know which provider is beneath a server. For example, the Debian base images on AWS EC2 provision your key for the `admin` user by default... whereas on Azure this username is [blacklisted][14]. So we could do something like this, with the same variable being used to provision the admin user on the Azure Linux VM:
+We can also set some of the properties for the Ansible connection based on the Terraform configuration, so that your more-or-less static Ansible configuration doesn't need to know which provider is beneath a server. For example, the Debian base images on AWS EC2 provision your key for the `admin` user by default... whereas on Azure this username is [blacklisted][14]. So we could do something like this, with the same variable being used to provision the admin user on the Azure Linux VM:
 
 ```
 resource "ansible_host" "example" {
@@ -84,9 +84,9 @@ resource "ansible_host" "example" {
 ### Terraform State
 One of the more-or-less unique parts of Terraform as an operations tool is the way it maintains state, and then applies changes only if it needs them. The way that desired state and existing state have the differences mapped and the plan built from the differences is actually quite sophisticated.
 
-My solution to interoperate between Ansible and Terraform relies on this state data. By default, Terraform stores the state on the local filesystem as a file called `terraform.tfstate`. It's generally recommended not to store this information in source control, as it may contain sensitive information. The current best practice is to configure Terraform to use a [remote state backend][15], so that the state of infrastructure is not centralized on the user's filesystem. Remote state backends assist in security and collaboration.
+My solution to inter-operate between Ansible and Terraform relies on this state data. By default, Terraform stores the state on the local filesystem as a file called `terraform.tfstate`. It's generally recommended not to store this information in source control, as it may contain sensitive information. The current best practice is to configure Terraform to use a [remote state backend][15], so that the state of infrastructure is not centralized on the user's filesystem. Remote state backends assist in security and collaboration.
 
-Terraform's state storage mechanism is also what allows us to interoperate between Terraform and Ansible. This was made very simple by the fact that Terraform's state is stored in a fairly simple JSON format. in my sample data set that I used for testing, the state file looks like this:
+Terraform's state storage mechanism is also what allows us to inter-operate between Terraform and Ansible. This was made very simple by the fact that Terraform's state is stored in a fairly simple JSON format. in my sample data set that I used for testing, the state file looks like this:
 
 ```json
 {
