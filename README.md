@@ -1,7 +1,7 @@
 nbering.github.io
 ==================
 
-User website for @nbering. Accessible from the registered domain http://nicholasbering.ca/
+User website for @nbering. Accessible from the registered domain https://nicholasbering.ca/
 
 ## Feature Ideas
 
