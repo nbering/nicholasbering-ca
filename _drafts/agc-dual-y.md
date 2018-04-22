@@ -33,7 +33,6 @@ Note that Classic and Material chart variants have a different API for Dual-Y su
 ### Material
 
 - Bar - Dual-X
-- Column
 - Line
 
 ## Chart Options
@@ -41,10 +40,11 @@ Note that Classic and Material chart variants have a different API for Dual-Y su
 ### Classic
 
 ```js
+$scope.myChartObject.type = "ColumnChart";
 $scope.myChartObject.options = {
   vAxes: {
-    0: {},
-    1: {}
+    0: { title: "Rainfall (mm)" },
+    1: { title: "Flow Rate (L/s)" }
   },
   series: {
     0: { targetAxisIndex: 0 },
@@ -58,7 +58,21 @@ $scope.myChartObject.options = {
 ### Material
 
 ```js
-// Insert example code block here.
+$scope.myChartObject.type = "google.charts.Bar";
+$scope.myChartObject.options = {
+  axes: {
+    y: {
+      rainfall: { label: "Rainfall (mm)" },
+      flow: { label: "Flow (L/s)"}
+    }
+  },
+  series: {
+    0: { axis: 'rainfall' },
+    1: { axis: 'flow' },
+    2: { axis: 'rainfall' },
+    3: { axis: 'flow'}
+  }
+};
 ```
 
 ## Examples

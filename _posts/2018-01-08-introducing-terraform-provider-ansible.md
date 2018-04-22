@@ -8,6 +8,9 @@ tags: [tools, terraform, ansible]
 author: Nicholas Bering
 date: 2018-01-08
 ---
+
+When working with Ansible and Terraform, I felt there was a gap in the workflow, so I built a <a href class="tracked" href="https://github.com/nbering/terraform-provider-ansible/">Terraform Provider for Ansible</a>. It integrates with a <a class="tracked" href="https://github.com/nbering/terraform-inventory/">Terraform Inventory</a> script to connect machines in your Terraform state to Ansible. This article explains my thought process in designing this integration.
+
 ## Why an Ansible provider for Terraform?
 As part of our day-to-day workflow at <a class="tracked" href="https://medstack.co/">MedStack</a>, we use <a class="tracked" href="https://www.terraform.io/">Terraform</a> and <a class="tracked" href="https://www.ansible.com/">Ansible</a>. I did some work early on to manage infrastructure with Ansible, but we found - for our team anyway - that it wasn't a great fit for our workflow. So we brought in Terraform to manage infrastructure, and then Ansible takes over to manage guest machine configuration and software deployment.
 
