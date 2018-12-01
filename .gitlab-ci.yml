@@ -4,3 +4,8 @@ before_script:
 jekyll:
   script:
     - jekyll build
+  artifacts:
+    name: "$CI_JOB_NAME"
+    paths:
+      - _site/
+
