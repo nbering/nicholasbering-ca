@@ -1,0 +1,6 @@
+before_script:
+  - gem install github-pages jekyll-redirect-from
+
+jekyll:
+  script:
+    - jekyll build
