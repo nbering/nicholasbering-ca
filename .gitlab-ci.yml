@@ -1,5 +1,5 @@
 before_script:
-  - gem install github-pages jekyll-redirect-from
+  - gem install github-pages jekyll-redirect-from jekyll-last-modified-at
 
 jekyll:
   script:
