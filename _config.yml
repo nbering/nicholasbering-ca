@@ -12,6 +12,7 @@ facebook_app_id: "1714325992123311"
 exclude:
     - .c9
     - .gitlab-ci.yml
+    - README.md
 
 # Build settings
 markdown: kramdown
