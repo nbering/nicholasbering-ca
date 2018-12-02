@@ -25,4 +25,4 @@ s3-sync:
     - master
   script:
     - cd _site
-    - aws s3 cp . s3://nicholasbering.ca --delete --no-progress
+    - aws s3 sync . s3://nicholasbering.ca --delete --no-progress
