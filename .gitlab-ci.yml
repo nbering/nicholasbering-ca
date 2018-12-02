@@ -1,7 +1,17 @@
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - _site/
+
 before_script:
   - gem install github-pages jekyll-redirect-from jekyll-last-modified-at
+  - pip install awscli
 
 jekyll:
+  stage: build
   script:
     - jekyll build
   artifacts:
@@ -9,3 +19,10 @@ jekyll:
     paths:
       - _site/
 
+s3-sync:
+  stage: deploy
+  only:
+    - master
+  script:
+    - cd _site
+    - aws s3 cp . s3://nicholasbering.ca --delete --no-progress
