@@ -8,6 +8,10 @@ cache:
 
 jekyll:
   stage: build
+  variables:
+    LC_ALL: "C.UTF-8"
+    LANG: "en_US.UTF-8"
+    LANGUAGE: "en_US.UTF-8"
   script:
     - gem install bundler --no-ri --no-rdoc
     - bundle install
