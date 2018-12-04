@@ -13,6 +13,8 @@ exclude:
     - .c9
     - .gitlab-ci.yml
     - README.md
+    - Gemfile
+    - Gemfile.lock
 
 # Build settings
 markdown: kramdown
