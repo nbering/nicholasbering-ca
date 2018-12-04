@@ -18,6 +18,7 @@ exclude:
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
+encoding: utf-8
 
 plugins:
   - jekyll-last-modified-at
