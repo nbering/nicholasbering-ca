@@ -9,7 +9,8 @@ cache:
 jekyll:
   stage: build
   script:
-    - gem install github-pages jekyll-redirect-from jekyll-last-modified-at
+    - gem install bundler --no-ri --no-rdoc
+    - bundle install
     - jekyll build
   artifacts:
     name: "$CI_JOB_NAME"
