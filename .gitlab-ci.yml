@@ -13,7 +13,7 @@ jekyll:
     LANG: "en_US.UTF-8"
     LANGUAGE: "en_US.UTF-8"
   script:
-    - gem install bundler --no-ri --no-rdoc
+    - gem install bundler
     - bundle install
     - jekyll build
   artifacts:
