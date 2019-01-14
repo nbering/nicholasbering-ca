@@ -1,0 +1,161 @@
+---
+---
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h3>Introduction</h3>
+            <p>to</p>
+            <h5>Application <br/>Security</h5>
+            <img src='{{ "/images/logo.svg" | prepend: site.baseurl | prepend: site.url }}'
+                class="plain"
+                style="width:20%;">
+            <p>
+                by Nicholas Bering
+            </p>
+            <a href="{{site.url}}">{{site.url}}</a>
+        </section>
+        <section>
+            <h5>What are we protecting?</h5>
+        </section>
+        <section>
+            <h5>C.I.A.</h5>
+            <p>Confidentiality</p>
+            <p>Integrity</p>
+            <p>Availability</p>
+        </section>
+        <section>
+            <h5>What can go wrong?</h5>
+        </section>
+        <section>
+            <h5>Schneir's Law</h5>
+            <figure>
+            <blockquote>
+                Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break.
+            </blockquote>
+                <footer>
+                    — <cite class="title"><a href="https://www.schneier.com/blog/archives/2011/04/schneiers_law.html">Shneier's Law</a></cite> by <cite class="author">Bruce Shneier</cite>
+                </footer>
+            </figure>
+        </section>
+        <section>
+            <h5>
+                S.T.R.I.D.E.
+            </h5>
+            <p>Spoofing</p>
+            <p>Tampering</p>
+            <p>Repudiation</p>
+            <p>Information Disclosure</p>
+            <p>Denial of Service</p>
+            <p>Elevation of Privilege</p>
+        </section>
+        <section>
+            <h5>OWASP Top 10 Vulnerabilities</h5>
+            <ol>
+                <li>Injection</li>
+                <li>Broken Authentication</li>
+                <li>Sensitive Data Exposure</li>
+                <li>XML External Entities (XXE)</li>
+                <li>Broken Access Control</li>
+            </ol>
+        </section>
+        <section>
+                <h5>OWASP Top 10 Vulnerabilities</h5>
+                <ol>
+                    <li value="6">Security Misconfiguration</li>
+                    <li>Cross-site Scripting (XSS)</li>
+                    <li>Insecure Deserialization</li>
+                    <li>Using Components with Known Vulnerabilities</li>
+                    <li>Insufficient Logging and Monitoring</li>
+                </ol>
+            </section>
+        <section>
+            <h5>Protect Your Resources</h5>
+        </section>
+        <section>
+            <h5>Trust Boundaries</h5>
+            <p>
+                <img style="width: 50%;" src="https://s3-ca-central-1.amazonaws.com/nbering-monosnap/Threat_Modeling_2019-01-14_17-46-48.png" alt="data flow diagaram with trust boundary and legend for symbols">
+                <div>Credit: "Threat Modeling: Designing for Security" by Adam Shostack</div>
+            </p>
+        </section>
+        <section>
+            <h5>Trust Boundaries</h5>
+            <p>
+                Systems are most vulnerable to all aspects of STRIDE when information or commands cross trust boundaries.
+            </p>
+        </section>
+        <section>
+            <h5>OWASP Top 10 Proactive Controls</h5>
+            <ol>
+                <li>Define Security Requirements</li>
+                <li>Leverage Security Frameworks and Libraries</li>
+                <li>Secure Database Access</li>
+                <li>Encode and Escape Data</li>
+                <li>Validate All Inputs</li>
+            </ol>
+        </section>
+        <section>
+            <h5>OWASP Top 10 Proactive Controls</h5>
+            <ol>
+                <li value="6">Implement Digital Identity</li>
+                <li>Enforce Access Controls</li>
+                <li>Protect Data Everywhere</li>
+                <li>Implement Security Monitoring and Logging</li>
+                <li>Handle all Errors and Exceptions</li>
+            </ol>
+        </section>
+        <section>
+            <h5>Risk</h5>
+        </section>
+        <section>
+            <h5>Risk Formula</h5>
+            <p>
+                risk = probability x loss
+            </p>
+        </section>
+        <section>
+            <h5>Cost of Mitigation</h5>
+            <p>
+                Even if loss is certain, cost of mitigating risk should not exceeed the potential loss.
+            </p>
+        </section>
+        <section>
+            <h5>Cost of Mitigation</h5>
+            <p>
+                Therefore, if storing sensitive information would cost more than the value that the information provides... just don't store it at all.
+            </p>
+            <p>
+                Better yet, don't even collect it.
+            </p>
+        </section>
+        <section>
+            <h5>Learning Resources</h5>
+        </section>
+        <section>
+            <h5>OWASP Top 10</h5>
+            <ul>
+                <li><a href-"https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project">Vulnerabilities</a></li>
+                <li><a href="https://www.owasp.org/index.php/OWASP_Proactive_Controls">Proactive Controls</a></li>
+            </ul>
+        </section>
+        <section>
+            <h5>OWASP ASVS</h5>
+            <ul>
+                <li><a href-"https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project">Application Security Verification Standard (ASVS)</a></li>
+                <li>This is a great resource to use if negotiating the scope for penetration testing, or to do a self-audit against security standards.</li>
+                <li>It's a good way to ease in, because it has maturity levels "baked in".</li>
+            </ul>
+        </section>
+        <section>
+            <h5>
+                Troy Hunt
+            </h5>
+            <p>Creator of <a href="https://haveibeenpwned.com/">Have I been pwned?</a></p>
+            <ul>
+                <li><a href="https://www.troyhunt.com/hack-yourself-first-how-to-go-on/">Hack Yourself First</a></li>
+                <li><a href="https://www.troyhunt.com/passwords-evolved-authentication-guidance-for-the-modern-era/">Passwords Evolved</a></li>
+
+            </ul>
+        </section>
+</div>
+</div>
