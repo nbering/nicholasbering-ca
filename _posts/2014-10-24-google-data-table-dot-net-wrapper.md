@@ -9,11 +9,11 @@ last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 
-So far my blog has focused on using the <a class="tracked" href="https://developers.google.com/chart/">Google Charts API</a> in <a class="tracked" href="https://angularjs.org/">AngularJS</a> with <a class="tracked" href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a>.  While this a fantastic combination for a client-side solution, so far it doesn't help us at all on the server side.  In fact, if you're trying to take full advantage of the Google Charts API, your job just got a little more complicated.
+So far my blog has focused on using the <a href="https://developers.google.com/chart/">Google Charts API</a> in <a href="https://angularjs.org/">AngularJS</a> with <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a>.  While this a fantastic combination for a client-side solution, so far it doesn't help us at all on the server side.  In fact, if you're trying to take full advantage of the Google Charts API, your job just got a little more complicated.
 
-Getting data into a Google Chart is pretty easy for small amounts of static data, but if you're working with large amounts of dynamic data the JSON-formatted <a class="tracked" href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DataTables</a> needed are a lot of work to set up.  For starters, the structure is kind of a collection of arrays that are logically linked.  Setting something like this up on either the server or client side takes a bit of work.  Also, the date format used by the API is not standard (at least, its not any kind of standard I've ever seen).
+Getting data into a Google Chart is pretty easy for small amounts of static data, but if you're working with large amounts of dynamic data the JSON-formatted <a href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DataTables</a> needed are a lot of work to set up.  For starters, the structure is kind of a collection of arrays that are logically linked.  Setting something like this up on either the server or client side takes a bit of work.  Also, the date format used by the API is not standard (at least, its not any kind of standard I've ever seen).
 
-In my search for a simpler solution, I came across the <a class="tracked href="http://googledatatablelib.codeplex.com/">Google DataTable .Net Wrapper</a>.  This helper/conversion library, available on <a class="tracked" href="https://www.nuget.org/packages/Google.DataTable.Net.Wrapper/">Nuget</a>, makes it a lot easier to build a valid Google DataTable on the server, to send off to the client.  It will even convert the standard <a class="tracked" href="http://msdn.microsoft.com/en-us/library/system.data.datatable(v=vs.110).aspx">.Net DataTable</a> class, so there's a good chance you'll be able to adapt some of your existing data access code to new purpose.
+In my search for a simpler solution, I came across the <a href="http://googledatatablelib.codeplex.com/">Google DataTable .Net Wrapper</a>.  This helper/conversion library, available on <a href="https://www.nuget.org/packages/Google.DataTable.Net.Wrapper/">Nuget</a>, makes it a lot easier to build a valid Google DataTable on the server, to send off to the client.  It will even convert the standard <a href="http://msdn.microsoft.com/en-us/library/system.data.datatable(v=vs.110).aspx">.Net DataTable</a> class, so there's a good chance you'll be able to adapt some of your existing data access code to new purpose.
 
 ## How-To
 
@@ -23,7 +23,7 @@ The easiest way to get the library to to install it with Nuget in Visual Studio.
 
 <div class="nuget-console-command">PM> Install-Package Google.DataTable.Net.Wrapper -Version 3.1.0</div>
 
-Or if you prefer, you can download the library from the project site on <a class="tracked" href="http://googledatatablelib.codeplex.com/">Codeplex</a>, and add the references manually.
+Or if you prefer, you can download the library from the project site on <a href="http://googledatatablelib.codeplex.com/">Codeplex</a>, and add the references manually.
 #### Use It
 
 You can work with the Google DataTable Wrapper three different ways:
@@ -105,7 +105,7 @@ using (var sysDt = new System.Data.DataTable())
 }
 ```
 
-The past three code samples are from the Google DataTable .Net Wrapper Project's <a class="tracked" href="http://googledatatablelib.codeplex.com/documentation">Documentation Page</a>, used with permission.
+The past three code samples are from the Google DataTable .Net Wrapper Project's <a href="http://googledatatablelib.codeplex.com/documentation">Documentation Page</a>, used with permission.
 
 #### Using with ASP.Net Web API
 

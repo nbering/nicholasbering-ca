@@ -9,7 +9,7 @@ last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 
-If you're not familiar with Material Design, have you been living under a rock?!  Just kidding.  Material Design is a pretty recent initiative from Google to unify design principles across all of their public-facing technologies.  Material Design is coming in some incarnation or other to <a class="tracked" href="https://developer.android.com/design/material/index.html">Android</a>, <a class="tracked" href="https://material.angularjs.org/">AngularJS</a>, and even the Google Charts API.  In this article I will cover how to use the two new charts with <a class="tracked" href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a>.
+If you're not familiar with Material Design, have you been living under a rock?!  Just kidding.  Material Design is a pretty recent initiative from Google to unify design principles across all of their public-facing technologies.  Material Design is coming in some incarnation or other to <a href="https://developer.android.com/design/material/index.html">Android</a>, <a href="https://material.angularjs.org/">AngularJS</a>, and even the Google Charts API.  In this article I will cover how to use the two new charts with <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a>.
 
 ### Material Design Comes to Google Charts
 
@@ -45,7 +45,7 @@ angular.module('myApp')
   });
 ```
 
-For details on the options available for the new charts visit the API Documentation for <a class="tracked" href="https://developers.google.com/chart/interactive/docs/gallery/barchart#Material">Bar Charts</a> and <a class="tracked" href="https://developers.google.com/chart/interactive/docs/gallery/linechart#Material">Line Charts</a>.
+For details on the options available for the new charts visit the API Documentation for <a href="https://developers.google.com/chart/interactive/docs/gallery/barchart#Material">Bar Charts</a> and <a href="https://developers.google.com/chart/interactive/docs/gallery/linechart#Material">Line Charts</a>.
 
 ### Full Examples
 

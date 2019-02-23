@@ -16,7 +16,7 @@ Messy code is inevitable for inexperienced programmers.  You need to make a mess
 
 ### Enter the Style Guide
 
-My messy code was just reaching the point where it was noticeably affecting my productivity when I found the <a class="tracked" href="http://devchat.tv/adventures-in-angular">Adventures in Angular</a> podcast.  In <a class="tracked" href="http://devchat.tv/adventures-in-angular/018-aia-style-guides">one episode</a>, the panel introduced an <a class="tracked" href="https://github.com/johnpapa/angularjs-styleguide">AngularJS-specific coding style guide</a> posted on <a class="tracked" href="https://github.com/">GitHub</a> by <a class="tracked" href="https://github.com/johnpapa">John Papa</a>.
+My messy code was just reaching the point where it was noticeably affecting my productivity when I found the <a href="http://devchat.tv/adventures-in-angular">Adventures in Angular</a> podcast.  In <a href="http://devchat.tv/adventures-in-angular/018-aia-style-guides">one episode</a>, the panel introduced an <a href="https://github.com/johnpapa/angularjs-styleguide">AngularJS-specific coding style guide</a> posted on <a href="https://github.com/">GitHub</a> by <a href="https://github.com/johnpapa">John Papa</a>.
 
 It wasn't some magic wand tool that I could wave and my code would be tidy. It was better than that.  It introduced certain concepts and patterns that would keep my code readable, understandable, and easy to maintain.  Every style rule also include examples of the pattern to be avoided, what could/should look like, and detailed explanations of why its better that way.  It helped me clean up my code and avoid writing any more messy code.
 
@@ -26,10 +26,10 @@ I had to screw up a little first in order to see the value of this guide, and to
 
 ### TL;DR
 
-Read John Papa's <a class="tracked" href="https://github.com/johnpapa/angularjs-styleguide">AngularJS Style Guide.  It teaches you to write cleaner AngularJS code.
+Read John Papa's <a href="https://github.com/johnpapa/angularjs-styleguide">AngularJS Style Guide.  It teaches you to write cleaner AngularJS code.
 
 ### Links
 
-* <a class="tracked href="https://github.com/johnpapa/angularjs-styleguide">AngularJS Style Guide</a>
-* <a class="tracked" href="http://devchat.tv/adventures-in-angular">Adventures in Angular Podcast</a>
-  * <a class="tracked" href="http://devchat.tv/adventures-in-angular/018-aia-style-guides">Episode 18 - Style Guides</a>
+* <a href="https://github.com/johnpapa/angularjs-styleguide">AngularJS Style Guide</a>
+* <a href="http://devchat.tv/adventures-in-angular">Adventures in Angular Podcast</a>
+  * <a href="http://devchat.tv/adventures-in-angular/018-aia-style-guides">Episode 18 - Style Guides</a>

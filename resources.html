@@ -19,7 +19,7 @@ resource_categories:
     {% assign links = site.resources | where: 'category', cat %}
     {% for link in links %}
     <li class="post-content">
-         <a class="post-link tracked" href="{{ link.address }}">{{ link.title }}</a>
+         <a class="post-link" href="{{ link.address }}">{{ link.title }}</a>
          <p>
              {{link.content}}
          </p>

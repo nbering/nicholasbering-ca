@@ -19,7 +19,7 @@ I first stumbled upon this feature trying to replicate the annotation feature av
 
 It turns out there was no way to make an annotation look quite like the feature I was looking for. But that's okay, there is still a fairly straight-forward way to do it. And I'll even save you from 2 hours of head-scratching that I did.
 
-There is a set of examples on how to do this without AngularJS in the <a class="tracked" href="https://developers.google.com/chart/interactive/docs/overlays">Charts API Documentation</a>.
+There is a set of examples on how to do this without AngularJS in the <a href="https://developers.google.com/chart/interactive/docs/overlays">Charts API Documentation</a>.
 
 ## Chart Layout Interface
 
