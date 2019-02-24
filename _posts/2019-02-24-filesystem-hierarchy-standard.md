@@ -3,7 +3,9 @@ layout: post
 title: File Hierarchy Standard (FHS)
 description: "Or: How I learned to stop worrying and love /opt."
 category: Linux
+tags: [Linux]
 author: Nicholas Bering
+date: 2019-02-24
 ---
 
 The File Hierarchy Standard (FHS) is a set of guiding principles for management of files on Linux systems. The standard is maintained by a working group of the Linux Foundation.
