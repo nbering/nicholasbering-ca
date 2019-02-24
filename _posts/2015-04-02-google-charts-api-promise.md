@@ -9,11 +9,11 @@ last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 
-The Google Charts API must be loaded Asynchronously. So, when using the <a class="tracked" href="https://github.com/angular-google-chart/angular-google-chart/">angular-google-chart</a> directive, how can you tell when then API has become available to the controller?
+The Google Charts API must be loaded Asynchronously. So, when using the <a href="https://github.com/angular-google-chart/angular-google-chart/">angular-google-chart</a> directive, how can you tell when then API has become available to the controller?
 
 ### The Problem
 
-The <a href="tracked" href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a> directive is designed in such a way that you may never actually need direct access to the <a class="tracked" href="https://developers.google.com/chart/">Charts API</a>.  But this simple case is pretty narrow.  If you need to use some of the advanced visualization features, or have need to manipulate or filter data, then you will need access to the Charts API directly.
+The <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a> directive is designed in such a way that you may never actually need direct access to the <a href="https://developers.google.com/chart/">Charts API</a>.  But this simple case is pretty narrow.  If you need to use some of the advanced visualization features, or have need to manipulate or filter data, then you will need access to the Charts API directly.
 
 ### The Promise
 
@@ -23,7 +23,7 @@ Now, to be more specific, the module is providing a promise that resolves when t
 
 ### Simple Case
 
-This example simply instantiates a controller, which receives the <a class="tracked" href="https://github.com/angular-google-chart/angular-google-chart/blob/96a9b1d37c9d30d8666e45fe9d1255290d84951b/ng-google-chart.js#L37-78">googleChartApiPromise</a> through dependency injection.  When the api has successfully loaded, the controller creates a new blank <a class="tracked" href="https://developers.google.com/chart/interactive/docs/reference#DataTable">DataTable</a> instance.
+This example simply instantiates a controller, which receives the <a href="https://github.com/angular-google-chart/angular-google-chart/blob/96a9b1d37c9d30d8666e45fe9d1255290d84951b/ng-google-chart.js#L37-78">googleChartApiPromise</a> through dependency injection.  When the api has successfully loaded, the controller creates a new blank <a href="https://developers.google.com/chart/interactive/docs/reference#DataTable">DataTable</a> instance.
 
 ```js
 (function (){
@@ -56,7 +56,7 @@ This example simply instantiates a controller, which receives the <a class="trac
 
 So the first example works very well for simple scenarios.  The next scenario is a solution for when you need to use the api to process some data, or just to run after some data has loaded.
 
-This example uses the <a class="tracked" href="https://docs.angularjs.org/api/ng/service/$q">$q</a> service that comes built into <a class="tracked" href="https://angularjs.org/">AngularJS</a> to wrap two promises together into a new promise that resolves when both promises have resolved.  This allows us to wait until both the Charts API and a request made with the <a class="tracked" href="https://docs.angularjs.org/api/ng/service/$http">$http</a> service have resolved, and then do something with both.
+This example uses the <a href="https://docs.angularjs.org/api/ng/service/$q">$q</a> service that comes built into <a href="https://angularjs.org/">AngularJS</a> to wrap two promises together into a new promise that resolves when both promises have resolved.  This allows us to wait until both the Charts API and a request made with the <a href="https://docs.angularjs.org/api/ng/service/$http">$http</a> service have resolved, and then do something with both.
 
 ```js
 (function(){
@@ -97,8 +97,8 @@ I was going to write about passing the googleChartsApiPromise as a resolve to ng
 
 ### Links
 
-* <a class="tracked" href="https://github.com/angular-google-chart/angular-google-chart/">Angular Google Chart on GitHub</a>
-* <a class="tracked" href="https://developers.google.com/chart/">Google Charts API Documentation</a>
-* <a class="tracked" href="https://angularjs.org/">AngularJS</a>
-  * <a class="tracked" href="https://docs.angularjs.org/api/ng/service/$q">$q Service</a>
-  * <a class="tracked" href="https://docs.angularjs.org/api/ng/service/$http">$http Service</a>
+* <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular Google Chart on GitHub</a>
+* <a href="https://developers.google.com/chart/">Google Charts API Documentation</a>
+* <a href="https://angularjs.org/">AngularJS</a>
+  * <a href="https://docs.angularjs.org/api/ng/service/$q">$q Service</a>
+  * <a href="https://docs.angularjs.org/api/ng/service/$http">$http Service</a>

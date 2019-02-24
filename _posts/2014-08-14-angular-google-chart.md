@@ -23,7 +23,7 @@ options available in my price range (about $0).  The packages I did find were
 either very complicated to set up, or lacking features most of the features I'd
 come to expect from using commercial charts on other sites.
 
-Then I found the <a class="tracked" href="https://developers.google.com/chart/">Google Charts API</a>.  It seemed to be the solution to all my
+Then I found the <a href="https://developers.google.com/chart/">Google Charts API</a>.  It seemed to be the solution to all my
 problems.  It was a full-featured JavaScript chart library, available for free,
 with some caveats.  Specifically, it is free but not open source.  So the source
 code is not available in any easily human-readable format.  Also, the code
@@ -39,8 +39,8 @@ app.  Making my own directive wasn't exactly a piece of cake either.
 
 ### Enter the Directive
 
-Then I stumbled upon the <a class="tracked" href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a> directive by
-<a class="tracked" href="https://github.com/bouil/">Nicolas Bouil</a>.  This simple directive takes much of the work out of the
+Then I stumbled upon the <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a> directive by
+<a href="https://github.com/bouil/">Nicolas Bouil</a>.  This simple directive takes much of the work out of the
 initial setup of a basic Google Chart.  The directive comes bundled with a
 service that handles the API Loader call asynchronously using the AngularJS
 Promise API, so you don't have to worry about fetching the library and passing
@@ -162,11 +162,11 @@ angular.module('myApp', ['googlechart'])
 ```
 
 This directive works pretty well for basic scenarios, but does not necessarily
-support 100% of the features provided by the <a class="tracked" href="https://developers.google.com/chart/">Google Charts API</a>.  To be more
-precise, it does not support <a class="tracked" href="https://developers.google.com/chart/interactive/docs/gallery/controls">Controls and Dashboards</a>, as these
+support 100% of the features provided by the <a href="https://developers.google.com/chart/">Google Charts API</a>.  To be more
+precise, it does not support <a href="https://developers.google.com/chart/interactive/docs/gallery/controls">Controls and Dashboards</a>, as these
 features require binding the Chart to a Dashboard and passes responsibility for
 drawing the chart to the Dashboard.  It's a little complicated to explain but
 basically the workflow is a little different and the directive isn't setup to
 support it.
 
-<a class="tracked" href="http://embed.plnkr.co/x9ttq50KYzuFSULNIX2L/preview">View the example in Plunker</a>
+<a href="http://embed.plnkr.co/x9ttq50KYzuFSULNIX2L/preview">View the example in Plunker</a>

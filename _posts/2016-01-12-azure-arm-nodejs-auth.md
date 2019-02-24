@@ -9,11 +9,11 @@ last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 
-I was recently working with the Azure Resource Management API in NodeJS for some work with <a class="tracked" href="http://back.io/">Back I/O</a>. I found the authentication process was rather poorly documented, so I thought I'd share my findings. This authentication method allows the application to access resources without a user credentials.
+I was recently working with the Azure Resource Management API in NodeJS for some work with <a href="http://back.io/">Back I/O</a>. I found the authentication process was rather poorly documented, so I thought I'd share my findings. This authentication method allows the application to access resources without a user credentials.
 
 ### Azure NodeJS SDK
 
-The <a class="tracked" href="http://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> can be used to manage Azure resources. The API comes with two management flavours: Azure Service Manager (ASM), and Azure Resource Manager (ARM). ASM seems to be pretty closely related to the old Azure Management site, while ARM maps to the services in the new Portal.
+The <a href="http://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> can be used to manage Azure resources. The API comes with two management flavours: Azure Service Manager (ASM), and Azure Resource Manager (ARM). ASM seems to be pretty closely related to the old Azure Management site, while ARM maps to the services in the new Portal.
 
 When I started working with the API, I decided to avoid using anything labeled "Classic." I didn't really want to get the email that a service I was depending on was going to be deprecated and I needed to rewrite some piece of my application to continue operating. The ASM pieces of the NodeJS SDK couldn't see the newer, non-classic, VM instances. Therefore, I needed to work with the ARM version of the API and SDK.
 
@@ -25,7 +25,7 @@ ARM uses OAuth tokens for access, which you acquire from Azure Active Directory 
 
 ### Setting up and Authorizing an Application in Azure AD
 
-Bear with me folks, we need to get an OAuth Bearer token, and this process starts off with absolutely no code whatsoever. For this part we're going to the Azure Active Directory Portal. I found my original instructions on how to do this on <a class="tracked" href="https://msdn.microsoft.com/en-ca/library/azure/dn790557.aspx">MSDN</a>. I found while researching this article that this could all be done from the <a class="tracked" href="https://www.npmjs.com/package/azure-cli">Azure Cross-Platform CLI</a>. Maybe that'll be my next post.
+Bear with me folks, we need to get an OAuth Bearer token, and this process starts off with absolutely no code whatsoever. For this part we're going to the Azure Active Directory Portal. I found my original instructions on how to do this on <a href="https://msdn.microsoft.com/en-ca/library/azure/dn790557.aspx">MSDN</a>. I found while researching this article that this could all be done from the <a href="https://www.npmjs.com/package/azure-cli">Azure Cross-Platform CLI</a>. Maybe that'll be my next post.
 
 Head over to the _Active Directory_ service page, select _Applications_ and _Add Application_. If this is your first new Active Directory Application, _Add Application_ will appear in the middle of the page, if you already have some listed, it appears in that dark strip at the bottom. I always forget to look down there for the add and save options because there's such a gap between the content and that strip.
 
@@ -55,7 +55,7 @@ Before you leave the page, make sure you've copied your application key, as well
 
 After the above steps are completed, we now have an Azure AD Application and a key to use for authentication. Now we need to grant the application permission to access Azure Resources.
 
-Azure's Role Based Access Control (RBAC) allows us to assign access privledges for ARM directly to the application. There's no option for this in the old management portal though, so we're going to need to move over to the <a class="tracked" href="https://portal.azure.com/">new management portal</a>. I found the instructions for this process <a class="tracked" href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/">in the azure documentation</a>, but I'll repeat it here.
+Azure's Role Based Access Control (RBAC) allows us to assign access privledges for ARM directly to the application. There's no option for this in the old management portal though, so we're going to need to move over to the <a href="https://portal.azure.com/">new management portal</a>. I found the instructions for this process <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/">in the azure documentation</a>, but I'll repeat it here.
 
 The fancy term for what we're doing is assigning a role to a "service principal." Basically, we're just assigning a role that would normally be given to a user, to an application. We can scope the service principal's role to a resource, or service provider. In my case, I'm just going to scope the permissions to the whole subscription, because I'm just playing around and don't want to have to do this for every service I want to access. This is mostly bad security practice, but you can tighten up the security once you know exactly which resources the app will require.
 
@@ -134,9 +134,9 @@ There are other ways to set up azure resource access for an application, but I l
 
 ### Links
 
-* <a class="tracked" href="http://back.io/">Back I/O</a>
-* <a class="tracked" href="http://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> on GitHub
-* <a class="tracked" href="https://msdn.microsoft.com/en-ca/library/azure/dn790557.aspx">Authenticating Azure Resource Manager requests</a> on MSDN
-* <a class="tracked" href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/">Create Active Directory application and service principal using portal</a> by Tom FitzMacken, Azure Documentation
-* <a class="tracked" href="https://manage.windowsazure.com/">Old Azure Portal</a>
-* <a class="tracked" href="https://portal.azure.com/">New Azure Portal</a>
+* <a href="http://back.io/">Back I/O</a>
+* <a href="http://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> on GitHub
+* <a href="https://msdn.microsoft.com/en-ca/library/azure/dn790557.aspx">Authenticating Azure Resource Manager requests</a> on MSDN
+* <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/">Create Active Directory application and service principal using portal</a> by Tom FitzMacken, Azure Documentation
+* <a href="https://manage.windowsazure.com/">Old Azure Portal</a>
+* <a href="https://portal.azure.com/">New Azure Portal</a>
