@@ -9,7 +9,7 @@ User website for @nbering. Accessible from the registered domain https://nichola
 
 ## Article Ideas
 
-- [ ] [Ionic Framework](http://ionicframework.com)
+- [ ] [Ionic Framework](https://ionicframework.com)
 - [ ] [ngCordova](http://ngCordova.com)
 - [ ] [Visual Studio Code](https://visualstudio.com/products/code-vs)
 - [ ] Atom Syntax Languages

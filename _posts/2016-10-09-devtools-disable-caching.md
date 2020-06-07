@@ -7,8 +7,8 @@ tags: [Chrome, DevTools, Caching, Development]
 author: Nicholas Bering
 ---
 
-Lately I've been hosting a weekly event with [Software Niagara](http://www.softwareniagara.com/),
-rather verbosely named ["Do You Something for Great Good"](https://www.meetup.com/software-niagara/events/233946276/).
+Lately I've been hosting a weekly event with [Software Niagara](https://www.softwareniagara.com/),
+rather verbosely named "Do You Something for Great Good".
 While giving a bit of an overview of HTML, it's origins, and how it relates to CSS and JavaScript, I got a little
 derailed answering questions about things I was doing with Chrome's DevTools. To that end, I think I'll do a little
 series on things you can do with the Developer Tools in Chrome.
@@ -16,7 +16,7 @@ series on things you can do with the Developer Tools in Chrome.
 ## Caching: The Good, The Bad, and The Annoying
 
 Caching is a necessary evil. It improves web performance in ways we probably don't even realize on a day-to-day basis.
-It reduces web traffic in the simplest and most fundamental way possible; it avoids transfering anything at all.
+It reduces web traffic in the simplest and most fundamental way possible; it avoids transferring anything at all.
 
 For anyone not familiar with browser caching, here's how it works in a nut shell. The browser makes a request to the server
 and gets some data. Maybe that data is HTML, a stylesheet, some javascript, or an image. The server may tag the response
@@ -24,7 +24,7 @@ with a cache-control header, which is essentially some meta-data about how long 
 when a web page uses the content at the same URL again, the browser checks for a local copy, looks at it's expiry date,
 and if it has not expired just uses that local copy and does not ask the server for the data again.
 
-With particularily large images, JavaScript files, and the growing number of very large style sheets, this can save
+With particularly large images, JavaScript files, and the growing number of very large style sheets, this can save
 the a lot of bandwidth for the user. This is especially important for mobile devices fetching data with expensive
 cellular data plans.
 

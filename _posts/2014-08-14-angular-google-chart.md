@@ -169,4 +169,4 @@ drawing the chart to the Dashboard.  It's a little complicated to explain but
 basically the workflow is a little different and the directive isn't setup to
 support it.
 
-<a href="http://embed.plnkr.co/x9ttq50KYzuFSULNIX2L/preview">View the example in Plunker</a>
+<a href="https://embed.plnkr.co/x9ttq50KYzuFSULNIX2L/preview">View the example in Plunker</a>

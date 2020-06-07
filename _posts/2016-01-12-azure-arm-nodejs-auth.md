@@ -13,7 +13,7 @@ I was recently working with the Azure Resource Management API in NodeJS for some
 
 ### Azure NodeJS SDK
 
-The <a href="http://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> can be used to manage Azure resources. The API comes with two management flavours: Azure Service Manager (ASM), and Azure Resource Manager (ARM). ASM seems to be pretty closely related to the old Azure Management site, while ARM maps to the services in the new Portal.
+The <a href="https://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> can be used to manage Azure resources. The API comes with two management flavours: Azure Service Manager (ASM), and Azure Resource Manager (ARM). ASM seems to be pretty closely related to the old Azure Management site, while ARM maps to the services in the new Portal.
 
 When I started working with the API, I decided to avoid using anything labeled "Classic." I didn't really want to get the email that a service I was depending on was going to be deprecated and I needed to rewrite some piece of my application to continue operating. The ASM pieces of the NodeJS SDK couldn't see the newer, non-classic, VM instances. Therefore, I needed to work with the ARM version of the API and SDK.
 
@@ -135,7 +135,7 @@ There are other ways to set up azure resource access for an application, but I l
 ### Links
 
 * <a href="http://back.io/">Back I/O</a>
-* <a href="http://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> on GitHub
+* <a href="https://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> on GitHub
 * <a href="https://msdn.microsoft.com/en-ca/library/azure/dn790557.aspx">Authenticating Azure Resource Manager requests</a> on MSDN
 * <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/">Create Active Directory application and service principal using portal</a> by Tom FitzMacken, Azure Documentation
 * <a href="https://manage.windowsazure.com/">Old Azure Portal</a>

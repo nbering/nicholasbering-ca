@@ -86,7 +86,7 @@ The layoutInterface also has methods for getting bounding boxes of the entire ch
 
 Here's my example, on CodePen for the first time ever. It's kind of subtle, but the weather icons on the top of the chart are taken from a column in the chart's DataTable. When the chart is ready, an array of objects with the necessary information to render the images in place is created from the chart data. An `ng-repeat` inside the same container element as the chart directive renders the actual image tags.
 
-<p data-height="489" data-theme-id="0" data-slug-hash="yNZxKr" data-default-tab="result" data-user="Balrog30" class='codepen'>See the Pen <a href='http://codepen.io/nbering/pen/yNZxKr/'>Angular-Google-Chart Image Overlay</a> by Nicholas Bering (<a href='http://codepen.io/nbering'>@Balrog30</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="489" data-theme-id="0" data-slug-hash="yNZxKr" data-default-tab="result" data-user="nbering" class='codepen'>See the Pen <a href='https://codepen.io/nbering/pen/yNZxKr/'>Angular-Google-Chart Image Overlay</a> by Nicholas Bering (<a href='https://codepen.io/nbering'>@nbering</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Gotcha!

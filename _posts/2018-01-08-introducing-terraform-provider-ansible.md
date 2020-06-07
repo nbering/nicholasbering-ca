@@ -26,7 +26,7 @@ One of the first things I tried was using the <a href="https://www.terraform.io/
 Those were the hardest pieces, but there was so much more. Managing files with local exec just seemed really hacky.
 
 ### An Ansible Provisioner
-In looking around for solutions, I had also come across <a href="https://github.com/jonmorehouse/terraform-provisioner-ansible">jonmorehouse/terraform-provisioner-ansible</a>. The major limiting factor for this solution was that it uses <a href="http://docs.ansible.com/ansible/latest/playbooks_delegation.html#local-playbooks">ansible-local</a>. There's a few reasons we decided this wasn't a good solution. There's nothing wrong with using ansible in local mode as a rule, but you do lose some of the benefits of the agent-less management solution, since you need to install Ansible on the managed node to run it.
+In looking around for solutions, I had also come across <a href="https://github.com/jonmorehouse/terraform-provisioner-ansible">jonmorehouse/terraform-provisioner-ansible</a>. The major limiting factor for this solution was that it uses <a href="https://docs.ansible.com/ansible/latest/playbooks_delegation.html#local-playbooks">ansible-local</a>. There's a few reasons we decided this wasn't a good solution. There's nothing wrong with using ansible in local mode as a rule, but you do lose some of the benefits of the agent-less management solution, since you need to install Ansible on the managed node to run it.
 
 ### Dynamic Inventory (on it's own)
 Another solution I evaluated was <a href="https://github.com/adammck/terraform-inventory">Terraform Dynamic Inventory for Ansible</a>. This again might work for a lot of people, but when I first looked at this almost a year ago, it was limited to Amazon EC2.

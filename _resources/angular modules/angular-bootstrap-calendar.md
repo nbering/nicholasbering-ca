@@ -1,7 +1,7 @@
 ---
 title: "Angular Bootstrap Calendar"
 author: Matt Lewis
-address: https://mattlewis.me/angular-bootstrap-calendar/
+address: https://github.com/mattlewis92/angular-bootstrap-calendar
 category: "AngularJS Modules"
 ---
 

@@ -73,7 +73,7 @@ This example uses the <a href="https://docs.angularjs.org/api/ng/service/$q">$q<
     function init(){
       var dataPromise = $http({
         method: 'GET',
-        url: 'http://api.example.com/some-data/'
+        url: 'https://api.example.com/some-data/'
       });
 
       $q.all({data: dataPromise, api: googleChartApiPromise})

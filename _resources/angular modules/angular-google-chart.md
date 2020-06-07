@@ -1,7 +1,7 @@
 ---
 title: "Angular Google Chart"
 author: Nicolas Bouillon
-address: http://angular-google-chart.github.io/angular-google-chart
+address: https://angular-google-chart.github.io/angular-google-chart
 category: "AngularJS Modules"
 ---
 

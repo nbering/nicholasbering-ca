@@ -158,4 +158,4 @@ angular.module('myApp', ['googlechart'])
   });
 ```
 
-<a href="http://embed.plnkr.co/lOXTg5XRggwdctUedvfl/preview">View the example on Plunker.</a>
+<a href="https://embed.plnkr.co/lOXTg5XRggwdctUedvfl/preview">View the example on Plunker.</a>

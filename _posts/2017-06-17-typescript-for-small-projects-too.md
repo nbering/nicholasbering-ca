@@ -119,7 +119,7 @@ So if anyone asks me if TypeScript is worth the effort, I'd simply say "yes". No
 caveats.
 
 [1]: http://back.io/
-[2]: http://www.typescriptlang.org/
+[2]: https://www.typescriptlang.org/
 [3]: https://www.npmjs.com/package/ts-node
 [4]: https://github.com/mishoo/UglifyJS
 [5]: https://www.npmjs.com/package/source-map-support
