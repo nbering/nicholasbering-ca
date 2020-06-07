@@ -49,11 +49,20 @@ For details on the options available for the new charts visit the API Documentat
 
 ### Full Examples
 
-To see all this in action, check out the plunks below.
+To see all this in action, check out the pens below.
 
-<iframe src="https://embed.plnkr.co/x9ttq50KYzuFSULNIX2L/preview" width="100%" height="250"></iframe>
+<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="nbering" data-slug-hash="gOPpeRB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Angular Google Chart Material Design">
+  <span>See the Pen <a href="https://codepen.io/nbering/pen/gOPpeRB">
+  Angular Google Chart Material Design</a> by Nicholas Bering (<a href="https://codepen.io/nbering">@nbering</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
 
-<iframe src="https://embed.plnkr.co/gb39c964GGNn8IRDoWSl/preview" width="100%" height="250"></iframe>
+<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="nbering" data-slug-hash="GRoJxjG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Angular Google Chart Material Design Line">
+  <span>See the Pen <a href="https://codepen.io/nbering/pen/GRoJxjG">
+  Angular Google Chart Material Design Line</a> by Nicholas Bering (<a href="https://codepen.io/nbering">@nbering</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ### Words of Caution
 
