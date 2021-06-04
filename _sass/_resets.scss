@@ -18,6 +18,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
-a         { color: #2a7ae2; text-decoration: none; }
+a         { color: $cold-compliment_10; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
-a:visited { color: #205caa; }
+a:visited { color: $cold-compliment_30; }

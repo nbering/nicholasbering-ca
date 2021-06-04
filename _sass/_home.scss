@@ -16,13 +16,13 @@
 
     .post-date {
       font-size: 15px;
-      color: #818181;
+      color: $secondary;
       padding-right:15px;
     }
 
     [class^="icon-"]:before,
     [class*=" icon-"]:before {
       font-size:15px;
-      color: #818181;
+      color: $secondary;
     }
 }
