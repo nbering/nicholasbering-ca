@@ -44,6 +44,6 @@ gem "github-pages", "214"
 gem "html-pipeline", "2.14.0"
 gem "sass", "3.7.4"
 gem "safe_yaml", "1.0.5"
-gem "nokogiri", "1.11.2"
+gem "nokogiri", "1.11.4"
 
 gem "jekyll-last-modified-at", "1.3.0"
