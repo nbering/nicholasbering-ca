@@ -18,7 +18,7 @@ Here, I'll cover a bit about how I set them up with Minecraft. I'm going to
 first cover a bit of the state of Minecraft on the Raspberry Pi... as much as I
 can gather.
 
-If you want, you can skip ahead to the [Feature Presentation](#Feature-Presentation). The next couple of sections help to set up context for anyone in the future
+If you want, you can skip ahead to the [Feature Presentation](#feature-presentation). The next couple of sections help to set up context for anyone in the future
 who needs to reverse-engineering my process or make improvements.
 
 ## State of Minecraft on RPi
