@@ -84,7 +84,7 @@ which I hadn't actually planned for, but was very pleased with. But the 8mm
 screws are a tiny bit short, so only a little bit of the threads grab into the
 horn.
 
-<p class="image-frame"><a href="{{site.baseurl}}/images/improved-servo-couplers-06_big.png"><img src="{{ site.baseurl }}/images/improved-servo-couplers-06_small.png" alt="Finished part with screws black alloy hex socket screws."></a> Finished part with screws black alloy hex socket screws.</p>
+<p class="image-frame"><a href="{{site.baseurl}}/images/improved-servo-couplers-06_big.png"><img src="{{ site.baseurl }}/images/improved-servo-couplers-06_small.png" alt="Finished part with black alloy hex socket screws."></a> Finished part with black alloy hex socket screws.</p>
 
 Overall, I am very happy with the results for this part, and I'm looking forward
 to seeing how they perform while the rover is driving around.
