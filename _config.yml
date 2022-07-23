@@ -21,6 +21,7 @@ permalink: pretty
 highlighter: rouge
 
 plugins:
+  - jekyll-feed
   - jekyll-last-modified-at
   - jekyll-sitemap
   - jekyll-redirect-from
