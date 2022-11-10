@@ -17,7 +17,7 @@ gem "jekyll-default-layout", "~> 0.1.5"
 gem "jekyll-titles-from-headings", "~> 0.5.3"
 gem "html-pipeline", "2.14.0"
 gem "sass-embedded", '~> 1.0'
-gem "nokogiri", "1.13.6"
+gem "nokogiri", "1.13.9"
 
 gem "jekyll-last-modified-at", "1.3.0"
 
