@@ -12,6 +12,7 @@ exclude:
     - .c9
     - .gitlab-ci.yml
     - .devcontainer
+    - azure-pipelines.yml
     - README.md
     - Gemfile
     - Gemfile.lock

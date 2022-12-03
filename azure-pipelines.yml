@@ -1,0 +1,22 @@
+pool:
+  name: Azure Pipelines
+steps:
+- task: UseRubyVersion@0
+  displayName: 'Use Ruby for Jekyll'
+  inputs:
+    versionSpec: '>= 2.7.6'
+
+- script: |
+   gem install bundler -v 1.16.6
+   bundle install --retry=3 --jobs=4
+  displayName: 'Install Dependencies'
+
+- script: 'bundle exec jekyll build --destination="${JEKYLL_BUILD_DEST}"'
+  displayName: 'Jekyll Build'
+  env:
+    JEKYLL_BUILD_DEST: $(Build.ArtifactStagingDirectory)
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: site'
+  inputs:
+    ArtifactName: site
