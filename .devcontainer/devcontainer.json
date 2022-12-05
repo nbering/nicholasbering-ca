@@ -1,11 +1,7 @@
 {
 	"name": "Ruby",
 	"image": "mcr.microsoft.com/devcontainers/ruby:3.1-bullseye",
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "none"
-		}
-	},
+	// "features": {},
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [4000],
