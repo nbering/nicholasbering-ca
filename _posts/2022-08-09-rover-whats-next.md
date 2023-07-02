@@ -2,7 +2,7 @@
 layout: post
 title: "Star Rover: What's Next?"
 description: >
-    Almost 2 yeers ago now, I set out to build a clone of the Sawppy Rover project.
+    Almost 2 years ago now, I set out to build a clone of the Sawppy Rover project.
     As a robotics chassis inspired by the Curiosity Mars Rover, it's proven to be
     fairly capable as a platform.
 
@@ -13,7 +13,7 @@ category: Robotics
 tags: [Robotics, Rover, 3D-Printing, Sawppy]
 ---
 
-Over 2 yeers ago now, I set out to [build a clone of the Sawppy Rover project][intro-post].
+Over 2 years ago now, I set out to [build a clone of the Sawppy Rover project][intro-post].
 As a robotics chassis inspired by the Curiosity Mars Rover, it's proven to be
 fairly capable.
 
