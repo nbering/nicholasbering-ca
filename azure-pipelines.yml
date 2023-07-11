@@ -7,7 +7,7 @@ steps:
     versionSpec: '>= 2.7.6'
 
 - script: |
-   gem install bundler -v 1.16.6
+   gem install bundler -v 3.4.16
    bundle install --retry=3 --jobs=4
   displayName: 'Install Dependencies'
 
