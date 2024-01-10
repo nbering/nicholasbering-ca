@@ -6,8 +6,8 @@ gem "kramdown", "~> 2.4.0"
 gem "kramdown-parser-gfm", "~> 1.1.0"
 gem "jekyll-redirect-from", "~> 0.16.0"
 gem "jekyll-sitemap", "~> 1.4.0"
+gem "jekyll-paginate-v2", github: 'sverrirs/jekyll-paginate-v2'
 # TODO: Wasn't using this, but should
-# gem "jekyll-paginate", "1.1.0"
 # gem "jekyll-readme-index", "~> 0.3.0"
 # gem "jekyll-relative-links", "~> 0.6.1"
 gem "jekyll-feed", "0.16.0"
