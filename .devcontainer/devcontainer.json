@@ -1,6 +1,6 @@
 {
 	"name": "Ruby",
-	"image": "mcr.microsoft.com/devcontainers/ruby:3.1-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/ruby:3.2-bookworm",
 	// "features": {},
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -8,11 +8,14 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "ruby --version",
-	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Shopify.ruby-lsp"
+			]
+		}
+	}
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
