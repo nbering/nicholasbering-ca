@@ -1,6 +1,6 @@
 {
 	"name": "Ruby",
-	"image": "mcr.microsoft.com/devcontainers/ruby:3.2-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/ruby:3.1-bookworm",
 	// "features": {},
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
