@@ -29,9 +29,17 @@ plugins:
   - jekyll-redirect-from
   - jekyll-optional-front-matter
   - jekyll-titles-from-headings
+  - jekyll-paginate-v2
 
 whitelist:
   - jekyll-redirect-from
+
+pagination:
+  enabled: true
+  per_page: 10
+  indexpage: "index"
+  sort_field: 'date'
+  sort_reverse: true
 
 collections:
     resources:
