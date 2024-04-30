@@ -11,7 +11,9 @@ github_username:  nbering
 exclude:
     - .c9
     - .gitlab-ci.yml
+    - .ruby-lsp
     - .devcontainer
+    - .vscode
     - azure-pipelines.yml
     - README.md
     - Gemfile
