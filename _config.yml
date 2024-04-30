@@ -22,17 +22,6 @@ markdown: kramdown
 permalink: pretty
 highlighter: rouge
 
-plugins:
-  - jekyll-feed
-  - jekyll-last-modified-at
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jekyll-optional-front-matter
-  - jekyll-titles-from-headings
-
-whitelist:
-  - jekyll-redirect-from
-
 collections:
     resources:
         output: false
