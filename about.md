@@ -3,40 +3,23 @@ layout: page
 title: About
 permalink: /about/
 ---
+Hi! My name is Nicholas Bering, and I'm a Staff Engineer at [MedStack]. I've been
+with MedStack for the past 7 years, helping build a product from an idea, to
+millions in annual revenue.
 
-Welcome to my site! My blog represents a small subset of my interests. I am
-generally fascinated with just about every kind of technology and engineering,
-with my career being focused on Software Engineering.
+When I joined the team here in 2017, the technical team was just Simon Woodside
+(the technical co-founder), and myself. The company quickly grew to about a
+dozen people, and turned what we learned from providing a very manual service,
+into an automated platform.
 
-Before transitioning into a technical career, I worked on my family's farm.
-There, my main responsibilities were the tending of crops and managing of
-agristourism and restaurant operations. I found value in coding custom software
-for everything from agronomy and farm business management, to inventory planning.
+By 2023, the whole company numbered 25 people. And the engineering team reached
+a milestone, by splitting into multiple teams. My title changed to Staff
+Engineer, reflecting my role in coordinating technical projects, on-call
+activities, and customer support for multiple teams.
 
-[MedStack] invited me to join their team as the first full-time engineering hire
-in 2017, starting as a Software Developer. So today I primarily focus on
-compliance and security for startups handling protected health information. It's
-a challenging ecosytem, and that makes it a lot of fun! The team has grown since
-then - and so have I!
-
-I'm currently a Technical Lead, and in 2022 our engineering team reached a
-milestone of splitting into multiple teams. One team to address the primary
-customer value stream, and another to address the complexity of fully-automated
-cloud infrastructure operations.
-
-My primary professional interests in the last 5 years include:
-- DevOps culture
-- Tools and practices in support of continuous deployment
-- Public key infrastructure
-- Cloud security operations
-- Web application security
-- Regulatory compliance for PII and PHI
-
-I try not to take my work time into personal time (too much), but I still love
-engineering in many forms. Some of my personal interests are:
-- Space exploration systems
-- Robotics
-- 3D Printing
-- Botany and Gardening
+I rarely write about work, given that our engagements with customers are often
+confidential. But I do like to write about technology at large. I keep plenty of
+side-projects to help expand my skills beyond work, and I'm always reading
+something.
 
 [MedStack]: https://medstack.co
