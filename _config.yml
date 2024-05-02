@@ -2,7 +2,10 @@
 title: Nicholas Bering
 subtitle: "Canadian Software Developer"
 email: nick@nicholasbering.ca
-description: "Nicholas Bering is a self-taught software developer. He currently works for MedStack, dividing his time between cloud infrastructure, operations, and application development."
+description: >
+  Hi! I'm a Staff Engineer at MedStack, where I helped take a Cloud Platform for
+  Healthcare from an idea, to a product with millions of dollars in annual
+  revenue. This is my personal site.
 baseurl: ""
 url: "https://nicholasbering.ca"
 twitter_username: nickbering
