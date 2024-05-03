@@ -4,7 +4,17 @@
 	// "features": {},
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [4000],
+	"forwardPorts": [4000, 4001],
+	"portsAttributes": {
+		"4000": {
+			"label": "Jekyll Serve",
+			"protocol": "http",
+			"onAutoForward": "notify"
+		},
+		"4001": {
+			"label": "Jekyll LiveReload Socket"
+		}
+	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "ruby --version",
