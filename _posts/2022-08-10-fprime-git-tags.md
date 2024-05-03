@@ -159,7 +159,7 @@ because it didn't have tags.
 
 There may be an actual bug here since `fprime-utils` can generate build output
 that is not recognizable to `fprime-gds`. Or maybe it's just user error since I
-accidently removed the release tags from my source control history.
+accidentally removed the release tags from my source control history.
 
 I may report this once I get a better sense of what repository would "own" this
 bug. In the meantime, this is my bug report. ;)

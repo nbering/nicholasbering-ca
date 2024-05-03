@@ -172,10 +172,10 @@ Core Storage disk: disk6
 Finished CoreStorage operation
 ```
 
-When reattaching the device manually, you may be prompted for the password through a graphical dialog. This prompt also gives the opportunity to save the password in your keychain so that you won't need to enter it again.
+When reattaching the device manually, you may be prompted for the password through a graphical dialog. This prompt also gives the opportunity to save the password in your key chain so that you won't need to enter it again.
 
 <p class="image-frame"><img src="{{ site.baseurl }}/images/corestorage-encryption-prompt.png" alt="Password prompt when reconnecting the device."></p>
 
-Any saved keys on your system will appear in the Keychain Access application as an entry of kind "encrypted volume password". From here you can delete the remembered passphrase, or retrieve it if you've lost your copy of it elsewhere.
+Any saved keys on your system will appear in the Key chain Access application as an entry of kind "encrypted volume password". From here you can delete the remembered passphrase, or retrieve it if you've lost your copy of it elsewhere.
 
 <p class="image-frame"><img src="{{ site.baseurl }}/images/corestorage-encryption-keychain.png" alt="Manage saved key from keychain access."></p>

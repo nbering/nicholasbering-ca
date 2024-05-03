@@ -21,7 +21,7 @@ bootstrap so jQuery was there already anyway. I quickly found that my solution w
 Specifically, I found myself writing a lot of extra code to handle state transitions related to changes in the data model after Ajax requests completed.
 
 I was trying to keep things simple by not using AngularJS, but in reality I think I could have saved myself hours of development time and left a more
-maintanable project if I had used a more structured framework. Did I need AngularJS to do that? Maybe not. But Angular's structural pattern generally
+maintainable project if I had used a more structured framework. Did I need AngularJS to do that? Maybe not. But Angular's structural pattern generally
 helps developers "fall into the pit of success."
 
 ## Awesome Community
@@ -32,7 +32,7 @@ I was never left short of answers, with everything from how to handle token-base
 
 To the community: I miss you all, and I hope I can get some work building apps along with you again.
 
-The AngularJS community kind of feels like the Coworking space I work out of here in Saint Catharines. No one is working specifically on the same project,
+The AngularJS community kind of feels like the Co-working space I work out of here in Saint Catharines. No one is working specifically on the same project,
 but everyone provides support for one another anyway. They're not actually pitching in on the work necessarily, but just being there and talking to
 each other makes us feel less alone.
 

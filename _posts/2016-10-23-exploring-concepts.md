@@ -54,7 +54,7 @@ You'll probably write it better the second time. That's because you've learned f
 of the first attempt.
 
 Sometimes this is a little like playing "Code Golf." The goal isn't really to write as few lines as
-possible though, it's just to figure out where all the water hazzards and sand traps are and avoid
+possible though, it's just to figure out where all the water hazards and sand traps are and avoid
 them next time.
 
 ## Don't Do Groundhog Day

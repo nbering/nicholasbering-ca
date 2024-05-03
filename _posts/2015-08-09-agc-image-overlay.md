@@ -9,7 +9,7 @@ last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 
-As promised in my last post, I did something slightly designery as something for show-and-tell at CodePenTo next Wednesday. Also, I'd like to note that this is my first post with pretty pictures.  Enjoy!
+As promised in my last post, I did something slightly designer-y as something for show-and-tell at CodePenTo next Wednesday. Also, I'd like to note that this is my first post with pretty pictures.  Enjoy!
 
 ## Image Overlays
 

@@ -20,7 +20,7 @@ FHS is a widely-adopted standard, in use by the majority of Linux Distributions,
 
 - `/` root of the filesystem
 - `/bin` essential binaries needed in single-user mode
-- `/boot` bootloader and it's dependencies
+- `/boot` boot-loader and it's dependencies
 - `/dev` directory for special "device" files, representing physical or logical devices
 - `/etc` configuration files
 - `/home` user home directories
@@ -31,7 +31,7 @@ FHS is a widely-adopted standard, in use by the majority of Linux Distributions,
 - `/root` root user's home directory
 - `/run` run-time variable data - cleared on boot
 - `/sbin` System binaries
-- `/srv` service data (ftp, webserver)
+- `/srv` service data (ftp, web server)
 - `/tmp` temporary files
 - `/usr` subdivision of the filesystem used in multi-user mode
   - `/usr/bin`

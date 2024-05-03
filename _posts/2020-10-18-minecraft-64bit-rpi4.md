@@ -184,7 +184,7 @@ If you just ran all that and don't care for a description, just skip ahead to
 [running MultiMC](#Run-MultiMC-and-First-Time-Setup).
 
 1. Create a new directory at `/home/username/MultiMC`, and set it as our working
-direcotry.
+directory.
     ```
     mkdir ~/MultiMC
     cd ~/MultiMC
@@ -357,7 +357,7 @@ may notice that the latest version here is a little out-of-date. That's because
 we're using a _fork_ - or copy, with changes - of the official MultiMC Minecraft
 release meta-data in order to get our arm64 build of LWJGL for the Raspberry Pi.
 >
-> Unforunately, these meta-data files are getting a little behind on that fork.
+> Unfortunately, these meta-data files are getting a little behind on that fork.
 I'm personally hoping to spend some time on getting these updated, or getting the
 LWJGL changes made available on the main branch of MultiMC, but at the moment we
 will need to accept being a _little_ behind. At least we're not on 1.12.2 anymore
@@ -431,7 +431,7 @@ under-powered for the default video settings.
 
 The image below shows the settings I've used. Basically... just turn everything
 down to the lowest setting. The one other setting I use is "Fullscreen: ON", but
-it was difficult to take a screen capture in fullscreen.
+it was difficult to take a screen capture in full-screen.
 
 ### 9. Performance Expectations
 
@@ -461,7 +461,7 @@ the Wiki instructions.
 
 Thank you for taking the time to read this. At the time I wrote this, I could
 not find comprehensive instructions on how to run Minecraft versions above 1.12.2
-on the Rasperry Pi 4... so I hope this helps some people get more out of their
+on the Raspberry Pi 4... so I hope this helps some people get more out of their
 Raspberry Pi.
 
 I'd also like to thank the MultiMC team for help troubleshooting my installation,

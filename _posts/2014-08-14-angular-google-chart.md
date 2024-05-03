@@ -32,7 +32,7 @@ which you then call, providing this loader function with a callback function to
 be run on completion.
 
 This last part added some considerable complexity for a new AngularJS developer.
-I did some hunting around and found a couple work arounds where you manually
+I did some hunting around and found a couple of workarounds, where you manually
 bootstrap your Angular app in the loader's callback function.  This worked but
 seemed unnecessary when the chart would not be displayed in every page of the
 app.  Making my own directive wasn't exactly a piece of cake either.

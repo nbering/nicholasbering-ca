@@ -9,9 +9,9 @@ last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
 ---
 
-I'm getting excited for <a href="https://nvite.com/CodePenTo/e92c">CodePenTo</a>, coming Wednesday, August 12, 2015 in Toronto. This will be my first tech industry event, so I thought I'd tackle a mini-project. I think I'll stick with my usual subject-matter - <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a>. But since this is a front-end focused crowd - at least I think they are - I'm going to work on something a little more designery. I don't have much of a design focus or skillset myself though, so wish me luck.
+I'm getting excited for <a href="https://nvite.com/CodePenTo/e92c">CodePenTo</a>, coming Wednesday, August 12, 2015 in Toronto. This will be my first tech industry event, so I thought I'd tackle a mini-project. I think I'll stick with my usual subject-matter - <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a>. But since this is a front-end focused crowd - at least I think they are - I'm going to work on something a little more designer-y. I don't have much of a design focus, or skill-set, myself. So wish me luck.
 
-The mini-project goal is to build a Google Chart with graphics overlayed onto the chart area. I've done this before for a work project, but it was kind of a hack. Now that I know how to make this work, I'll try to clean it up and make it more generic so that it can serve as an example project. I think I'll make this one Maple. Because... why not?
+The mini-project goal is to build a Google Chart with graphics overlaid onto the chart area. I've done this before for a work project, but it was kind of a hack. Now that I know how to make this work, I'll try to clean it up and make it more generic so that it can serve as an example project. I think I'll make this one Maple. Because... why not?
 
 In honour of the event sponsor - <a href="https://codepen.io/">CodePen.io</a> - I will be building this example in CodePen.  I've never use their service, so this will be a first. I signed up already and the project's very first building blocks are in place - nothing to see yet, but it's started. You can <a href="https://codepen.io/nbering/pen/yNZxKr">check it out now</a>, if you want to follow my progress.
 

@@ -22,6 +22,7 @@ time to set some new project goals to expand on what I learned from the base
 project.
 
 I have a things I can improve on:
+
 - Physical Reliability
 - Control Software
 - Sensors and Vision
@@ -52,7 +53,7 @@ out of the plastic.
 I have some things I'd like to try in order to improve on this:
 
 - Removing inserts from drive component designs
-  - Could a platic thread be strong enough on it's own?
+  - Could a plastic thread be strong enough on it's own?
   - Is the weak material bonding between the insert and actually PLA making it less reliable?
 - Improving the heat-set insert installation procedure
   - The variation between 3D printers causing tolerance problems for heat set
@@ -69,7 +70,7 @@ I have some things I'd like to try in order to improve on this:
 
 ## Control Software
 
-The Sawppy project included a control sytem built as a Python web app. It's a
+The Sawppy project included a control system built as a Python web app. It's a
 great demonstration of the working chassis but has some problems and limitations:
 
 - Uses an outdated version of Python
@@ -88,8 +89,8 @@ impressions:
 
 - Linux installation included an incredible number of packages, so it's a bit heavy
 - Very modular design:
-  - Components seem to be languge-agnostic and communicate over RPC, which
-  - This is incredibly powerfull, but also adds to complexity for understanding
+  - Components seem to be language-agnostic and communicate over RPC, which
+  - This is incredibly powerful, but also adds to complexity for understanding
     even simply applications
   - Individual components seem to be able to run on low-end hardware, but the core
     system needs a fair bit of compute and network
@@ -100,9 +101,9 @@ impressions:
 
 ### NASA f' (f-prime)
 F' is a real, flight-tested framework. It powers the Ingenuity flight demo on the
-Mars 2020 mission, as well as a number of smallsat projects.
+Mars 2020 mission, as well as a number of small-sat projects.
 
-I've looked at a number of NASA Open Soource projects... and honestly, most are
+I've looked at a number of NASA Open Source projects... and honestly, most are
 terribly-documented. This one seems to be the exception. It's the most
 approachable and well-documented NASA Open Source project I've looked at to date.
 It has really great getting-started docs, and even some walkthrough tutorials
@@ -110,12 +111,12 @@ based on the Raspberry Pi - which is nice, since the rover controls are already
 based on the Raspberry Pi.
 
 Unlike ROS, it's language-specific. It's built on modern C++, with a lot of python
-build utilities for code generation and a simple ground-station software suitee.
+build utilities for code generation and a simple ground-station software suite.
 This improves developer productivity and helps to build a modular and testable
 framework.
 
 ### Picking One
-Both framworks are pretty complex, so as a hobby project I need to pick one. I
+Both frameworks are pretty complex, so as a hobby project I need to pick one. I
 simply don't have thee time for a deep-dive on two frameworks.
 
 If it was purely about making the rover work - which was the goal I set for the
@@ -124,7 +125,7 @@ and existing Sawppy projects would be a big boost.
 
 However, I did not find a lot of joy in the "getting started" with ROS2. Whereas,
 in going over the NASA f-prime documentation... I felt sort of connected to the
-space industry. Getting a little peek into what matteres to NASA's developers.
+space industry. Getting a little peek into what matters to NASA's developers.
 
 So I think I'm going to deep-dive into f' and see if I can make it work.
 I'd also like to try connecting it to thee open-mct mission control framework,
@@ -139,7 +140,7 @@ Sawppy software suite, it would necessarily involve some of the software
 improvements above, to integrate new hardware inputs.
 
 I'd like to add visual telemetry for sure, but also some typical sensor inputs
-for things like temperature, pressuree, humidity, etc. Just for scientific
+for things like temperature, pressure, humidity, etc. Just for scientific
 completeness.
 
 ## Remote Manipulator

@@ -97,7 +97,7 @@ angular.module('myApp', ['googlechart'])
     chart1.options = {
       "title": "Sales per month",
       "colors": ['#0000FF', '#009900', '#CC0000', '#DD9900'],
-      //defaultColors property is not part of the strandard options
+      //defaultColors property is not part of the standard options
       //object.  I've added it here to keep a backup of the original
       //colors to call on when re-enabling a series.
       "defaultColors": ['#0000FF', '#009900', '#CC0000', '#DD9900'],
@@ -115,7 +115,7 @@ angular.module('myApp', ['googlechart'])
       }
     };
 
-    //we initilize a basic view here, which the series
+    //we initialize a basic view here, which the series
     //hiding code will interact with.
     chart1.view = {
       columns: [0, 1, 2, 3, 4]

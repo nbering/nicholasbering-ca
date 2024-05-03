@@ -74,6 +74,6 @@ while the developer tools are open, so this won't change anything for your norma
 
 ## Caching Issues Solved
 
-Hopefully this solves your innapropriate browser caching issues during development. Setting up proper caching for production
+Hopefully this solves your inappropriate browser caching issues during development. Setting up proper caching for production
 is another issue entirely... but the mechanisms for dealing with that depend on your Web Server, and also how you need it to
 behave for your particular application.

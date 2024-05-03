@@ -11,7 +11,7 @@ author: Nicholas Bering
 
 Yesterday, we put a little work into tightening up all the joints on Star (our
 family's Sawppy Rover build). After a reasonably long test drive of about 30
-miutes, there were not discernable issues with loose set screws on the wheel
+minutes, there were not discern-able issues with loose set screws on the wheel
 and steering shafts.
 
 Not having to tune up drive parts afforded me some time in the evening to
@@ -22,18 +22,18 @@ opportunity.
 ## Powering it Up
 
 Powering the Raspberry Pi after installation in the Rover was pretty simple. I
-already have a DC/DC Buck Convertor powering the Arduino board. It takes the
+already have a DC/DC Buck Converter powering the Arduino board. It takes the
 LiPo battery power from the 2S battery pack (ranging 7.4-8.4V), and steps it
 down to a voltage acceptable to the control circuitry.
 
 I just needed to make sure the output was set to 5V for the Raspberry Pi, and
-connect it to GPIO pins 1 (5V), and 3 (GND) on the Raspbbery Pi. It booted as
+connect it to GPIO pins 1 (5V), and 3 (GND) on the Raspberry Pi. It booted as
 soon as I turned on the power, and there were no under-volt issues reported in
 the system logs.
 
 ## Initial Setup
 
-Before powering the board up on the rover, I needed to do some intial setup at
+Before powering the board up on the rover, I needed to do some initial setup at
 my desk. It would have been difficult to get a monitor and keyboard hooked up
 to the rover chassis so I could run the first commands to enable SSH, join the
 WiFi network, etc.
@@ -45,7 +45,7 @@ another running Raspberry Pi in my office to get it started.
 
 Once I'd sorted out power, everything else was a breeze. Using the `raspi-config`
 command, I set the keyboard locale, WiFi settings, changed the hostname to the
-somewhat whimsicle name "star-rover", and so on.
+somewhat whimsical name "star-rover", and so on.
 
 The only other minor hiccup I had was that I tried to configure it to connect to
 my 5GHz network, but that doesn't appear to be supported. But since my router is

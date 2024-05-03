@@ -34,10 +34,10 @@ This example simply instantiates a controller, which receives the <a href="https
   MainController.$inject = ['$scope', 'googleChartApiPromise'];
 
   function MainController($scope, googleChartApiPromise){
-    // Setup bindable objects
+    // Setup bind-able objects
     $scope.chart = {};
 
-    // Run function to initlize controller
+    // Run function to initialize controller
     init();
 
     function init(){

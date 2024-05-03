@@ -100,11 +100,11 @@ Looking for types for momentjs?
 npm install --save-dev @types/moment
 ```
 
-It's that simpe. This works because TypeScript 2.x added support for some
+It's that simple. This works because TypeScript 2.x added support for some
 really good default lookup locations for types. No more wiring up references
 with triple-slash comments and xml tags.
 
-JavaScript projects can also provide a typings attribtute to their `package.json` file,
+JavaScript projects can also provide a typings attribute to their `package.json` file,
 giving TypeScript a more direct hint to where to find the typings without downloading
 any additional packages or files.
 

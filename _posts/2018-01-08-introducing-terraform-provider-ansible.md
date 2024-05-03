@@ -38,7 +38,7 @@ Last, it also opened up the question for me... *What is a server anyway?*
 There are just so many resources that Terraform can manage that could be considered a server, it seemed brittle to try to inspect the Terraform state file for resources when Terraform manages so many things that could be a server... all with completely difference set of properties. It also manages so many things that *aren't* servers that you end up digging through a lot of noise to find the signal.
 
 ### Manual Workflow
-For a time, we settled on a semi-automatic workflow, whereby we ran Terraform to modify infrastructure components, and then scripted outputs using `terraform console` to dump the needed configuration values to files, which could be loaded with the Ansible file lookups, with their locations being defined by certain conventions set by the team.
+For a time, we settled on a semi-automatic workflow, whereby we ran Terraform to modify infrastructure components, and then scripted outputs using `terraform console` to dump the needed configuration values to files, which could be loaded with the Ansible file look-ups, with their locations being defined by certain conventions set by the team.
 
 This works fairly well, with the biggest argument in favor being that there was little to write, and there was always the promise that if we found something better we could easily migrate.
 

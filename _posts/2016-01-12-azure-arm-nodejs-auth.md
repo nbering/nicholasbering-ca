@@ -15,7 +15,7 @@ I was recently working with the Azure Resource Management API in NodeJS for some
 
 The <a href="https://azure.github.io/azure-sdk-for-node/">Azure NodeJS SDK</a> can be used to manage Azure resources. The API comes with two management flavours: Azure Service Manager (ASM), and Azure Resource Manager (ARM). ASM seems to be pretty closely related to the old Azure Management site, while ARM maps to the services in the new Portal.
 
-When I started working with the API, I decided to avoid using anything labeled "Classic." I didn't really want to get the email that a service I was depending on was going to be deprecated and I needed to rewrite some piece of my application to continue operating. The ASM pieces of the NodeJS SDK couldn't see the newer, non-classic, VM instances. Therefore, I needed to work with the ARM version of the API and SDK.
+When I started working with the API, I decided to avoid using anything labelled "Classic." I didn't really want to get the email that a service I was depending on was going to be deprecated and I needed to rewrite some piece of my application to continue operating. The ASM pieces of the NodeJS SDK couldn't see the newer, non-classic, VM instances. Therefore, I needed to work with the ARM version of the API and SDK.
 
 ### Authentication Documentation Confusion
 
@@ -55,7 +55,7 @@ Before you leave the page, make sure you've copied your application key, as well
 
 After the above steps are completed, we now have an Azure AD Application and a key to use for authentication. Now we need to grant the application permission to access Azure Resources.
 
-Azure's Role Based Access Control (RBAC) allows us to assign access privledges for ARM directly to the application. There's no option for this in the old management portal though, so we're going to need to move over to the <a href="https://portal.azure.com/">new management portal</a>. I found the instructions for this process <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/">in the azure documentation</a>, but I'll repeat it here.
+Azure's Role Based Access Control (RBAC) allows us to assign access privileges for ARM directly to the application. There's no option for this in the old management portal though, so we're going to need to move over to the <a href="https://portal.azure.com/">new management portal</a>. I found the instructions for this process <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/">in the azure documentation</a>, but I'll repeat it here.
 
 The fancy term for what we're doing is assigning a role to a "service principal." Basically, we're just assigning a role that would normally be given to a user, to an application. We can scope the service principal's role to a resource, or service provider. In my case, I'm just going to scope the permissions to the whole subscription, because I'm just playing around and don't want to have to do this for every service I want to access. This is mostly bad security practice, but you can tighten up the security once you know exactly which resources the app will require.
 

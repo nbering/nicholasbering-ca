@@ -76,7 +76,7 @@ affect the performance of the part.
 
 The screws that came with the metal servo horn were pretty much the perfect
 length for this application. I'm not a big fan of phillips heads because they
-strip easily, so the design accomodates the hex socket screws that I used for
+strip easily, so the design accommodates the hex socket screws that I used for
 the rest of the rover.
 
 The socket headed screws actually look very nice. They sit flush with the top,
