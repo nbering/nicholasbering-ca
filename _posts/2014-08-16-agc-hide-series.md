@@ -7,11 +7,12 @@ description: In my previous post - Google Charts Directive for AngularJS - I int
 date: 2014-08-16 15:53:00
 last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
+# cSpell:words googlechart, gridlines
 ---
-In my previous post - <a href="{% post_url 2014-08-14-angular-google-chart %}">Google Charts Directive for AngularJS</a> - I introduced
-the <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart Project</a>.  In this post I'm going to skip some of
+In my previous post - [Google Charts Directive for AngularJS] - I introduced
+the [Angular-Google-Chart Project].  In this post I'm going to skip some of
 the basics and go straight to something advanced that I found to be in demand
-for both this directive and the <a href="https://developers.google.com/chart/">Google Charts API</a> in general.
+for both this directive and the [Google Charts API] in general.
 
 Sometimes when you're displaying data in charts, you just have too much data to
 show at once.  The chart gets very cluttered and difficult to read (especially
@@ -158,4 +159,9 @@ angular.module('myApp', ['googlechart'])
   });
 ```
 
-<a href="https://embed.plnkr.co/lOXTg5XRggwdctUedvfl/preview">View the example on Plunker.</a>
+[View the example on Plunker.]
+
+[Google Charts Directive for AngularJS]: <{% post_url 2014-08-14-angular-google-chart %}>
+[Angular-Google-Chart Project]: <https://github.com/angular-google-chart/angular-google-chart/>
+[Google Charts API]: <https://developers.google.com/chart/>
+[View the example on Plunker.]: <https://embed.plnkr.co/lOXTg5XRggwdctUedvfl/preview>
