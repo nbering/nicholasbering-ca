@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "Bouil",
         "Catharines",
         "Creality",
         "Ender",
@@ -12,5 +13,15 @@
         "Thingiverse",
         "Woodside"
     ],
-    "cSpell.language": "en-CA"
+    "cSpell.language": "en-CA",
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".devcontainer",
+        ".vscode",
+        ".vscode-insiders",
+        "settings.json"
+    ]
 }
