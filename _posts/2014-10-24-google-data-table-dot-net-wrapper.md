@@ -7,28 +7,32 @@ tags: [google-visualization, asp.net]
 date: 2014-10-24 23:31:00
 last_modified_at: 2016-05-20 00:14:22 2016 -0400
 author: Nicholas Bering
+# cSpell:words firstcolumn, typeof, secondcolumn, thirdcolumn, formatters
 ---
 
-So far my blog has focused on using the <a href="https://developers.google.com/chart/">Google Charts API</a> in <a href="https://angularjs.org/">AngularJS</a> with <a href="https://github.com/angular-google-chart/angular-google-chart/">Angular-Google-Chart</a>.  While this a fantastic combination for a client-side solution, so far it doesn't help us at all on the server side.  In fact, if you're trying to take full advantage of the Google Charts API, your job just got a little more complicated.
+So far my blog has focused on using the [Google Charts API] in [AngularJS] with [Angular-Google-Chart]. While this a fantastic combination for a client-side solution, so far it doesn't help us at all on the server side. In fact, if you're trying to take full advantage of the Google Charts API, your job just got a little more complicated.
 
-Getting data into a Google Chart is pretty easy for small amounts of static data, but if you're working with large amounts of dynamic data the JSON-formatted <a href="https://developers.google.com/chart/interactive/docs/datatables_dataviews">DataTables</a> needed are a lot of work to set up.  For starters, the structure is kind of a collection of arrays that are logically linked.  Setting something like this up on either the server or client side takes a bit of work.  Also, the date format used by the API is not standard (at least, its not any kind of standard I've ever seen).
+Getting data into a Google Chart is pretty easy for small amounts of static data, but if you're working with large amounts of dynamic data the JSON-formatted [DataTables] needed are a lot of work to set up. For starters, the structure is kind of a collection of arrays that are logically linked. Setting something like this up on either the server or client side takes a bit of work. Also, the date format used by the API is not standard (at least, its not any kind of standard I've ever seen).
 
-In my search for a simpler solution, I came across the <a href="https://github.com/zoranmax/GoogleDataTableLib">Google DataTable .Net Wrapper</a>.  This helper/conversion library, available on <a href="https://www.nuget.org/packages/Google.DataTable.Net.Wrapper/">Nuget</a>, makes it a lot easier to build a valid Google DataTable on the server, to send off to the client.  It will even convert the standard <a href="https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netcore-3.1">.Net DataTable</a> class, so there's a good chance you'll be able to adapt some of your existing data access code to new purpose.
+In my search for a simpler solution, I came across the [Google DataTable .Net Wrapper]. This helper/conversion library, available on [Nuget], makes it a lot easier to build a valid Google DataTable on the server, to send off to the client.  It will even convert the standard [.Net DataTable] class, so there's a good chance you'll be able to adapt some of your existing data access code to new purpose.
 
 ## How-To
 
-#### Get the Library
+### Get the Library
 
 The easiest way to get the library to to install it with Nuget in Visual Studio.  From the Package Manager Console:
 
+<!-- markdownlint-disable -->
 <div class="nuget-console-command">PM> Install-Package Google.DataTable.Net.Wrapper -Version 3.1.0</div>
+<!-- markdownlint-restore -->
 
-Or if you prefer, you can download the library from the project site on <a href="https://github.com/zoranmax/GoogleDataTableLib">Codeplex</a>, and add the references manually.
-#### Use It
+Or if you prefer, you can download the library from the project site on [GitHub], and add the references manually.
+
+### Use It
 
 You can work with the Google DataTable Wrapper three different ways:
 
-* Create an object of type `Google.DataTable.Net.Wrapper.DataTable` and add your columns and rows directly to this object.  This may work well if you are building your project from the group up to work with Google Charts.
+* Create an object of type `Google.DataTable.Net.Wrapper.DataTable` and add your columns and rows directly to this object. This may work well if you are building your project from the group up to work with Google Charts.
 
 ```csharp
 public string GetStatisticsForChart(string messageCode)
@@ -83,7 +87,7 @@ var json = list.ToGoogleDataTable()
                .GetJson();
 ```
 
-* Or, Convert a `System.Data.DataTable` directly into a `Google.DataTable.Net.Wrapper.DataTable` instance.  This worked very well for me as I was already working with data from an SQL Server using ADO.Net, so I could just fill a DataTable from an adapter and convert it to a Google DataTable.
+* Or, Convert a `System.Data.DataTable` directly into a `Google.DataTable.Net.Wrapper.DataTable` instance. This worked very well for me as I was already working with data from an SQL Server using ADO.Net, so I could just fill a DataTable from an adapter and convert it to a Google DataTable.
 
 ```csharp
 using (var sysDt = new System.Data.DataTable())
@@ -105,11 +109,11 @@ using (var sysDt = new System.Data.DataTable())
 }
 ```
 
-The past three code samples are from the Google DataTable .Net Wrapper Project's <a href="https://github.com/zoranmax/GoogleDataTableLib/wiki">Documentation Page</a>, used with permission.
+The past three code samples are from the Google DataTable .Net Wrapper Project's [Documentation Page], used with permission.
 
 #### Using with ASP.Net Web API
 
-If you've gotten this far and have decided this solves some problems for you, I'll give you a free solution to one gotcha here.  If you're using this library to return JSON from ASP.Net Web API, you'll need a little more overheard code.  The problem is that Web API wants to be helpful and automatically attempts to format the output for you.  Unfortunately to return a string as JSON we have to override this functionality and set the response headers manually.
+If you've gotten this far and have decided this solves some problems for you, I'll give you a free solution to one gotcha here. If you're using this library to return JSON from ASP.Net Web API, you'll need a little more overheard code. The problem is that Web API wants to be helpful and automatically attempts to format the output for you. Unfortunately to return a string as JSON we have to override this functionality and set the response headers manually.
 
 ```csharp
 public class ChartDataController : ApiController
@@ -156,4 +160,14 @@ public class ChartDataController : ApiController
 
 ## Conclusion
 
-The Google Charts API is a great starting point if you need a chart on a web page.  If you're using angular the Angular-Google-Charts project provides a simple directive to handle loading the library and drawing the chart.  These client-side tools make setting up the data on the server side a little more complicated though, so using the Google DataTable .Net Wrapper library completes the solution nicely if you're using ASP.Net Web API.
+The Google Charts API is a great starting point if you need a chart on a web page. If you're using angular the Angular-Google-Charts project provides a simple directive to handle loading the library and drawing the chart. These client-side tools make setting up the data on the server side a little more complicated though, so using the Google DataTable .Net Wrapper library completes the solution nicely if you're using ASP.Net Web API.
+
+[Google Charts API]: <https://developers.google.com/chart/>
+[AngularJS]: <https://angularjs.org/>
+[Angular-Google-Chart]: <https://github.com/angular-google-chart/angular-google-chart/>
+[DataTables]: <https://developers.google.com/chart/interactive/docs/datatables_dataviews>
+[Google DataTable .Net Wrapper]: <https://github.com/zoranmax/GoogleDataTableLib>
+[Nuget]: <https://www.nuget.org/packages/Google.DataTable.Net.Wrapper/>
+[.Net DataTable]: <https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netcore-3.1>
+[GitHub]: <https://github.com/zoranmax/GoogleDataTableLib>
+[Documentation Page]: <https://github.com/zoranmax/GoogleDataTableLib/wiki>
