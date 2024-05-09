@@ -1,0 +1,5 @@
+{% if page.footer_scripts %}
+  {% for script in page.footer_scripts %}
+  <script src="{{ script.src}}"{% if script.async %} async{% endif %}></script>
+  {% endfor %}
+{% endif %}
