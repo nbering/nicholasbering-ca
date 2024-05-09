@@ -64,7 +64,7 @@ and everything.
 
 Code Hunt makes learning unit testing fun.
 
-### There are more out there&excl;
+### There are more out there!
 
 There are many web sites dedicated to programming practice problems. I've just
 scratched the surface here, and in fact I've pushed this out a little less
