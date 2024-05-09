@@ -1,3 +1,4 @@
+# cSpell:words devcontainer markdownlint nickbering
 # Site settings
 title: Nicholas Bering
 subtitle: "Canadian Software Developer"
@@ -16,6 +17,7 @@ exclude:
     - .gitlab-ci.yml
     - .ruby-lsp
     - .devcontainer
+    - .markdownlint.json
     - .vscode
     - azure-pipelines.yml
     - README.md
