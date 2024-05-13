@@ -1,0 +1,9 @@
+<p class="image-frame">
+    {% if include.src contains "://" %}
+        <img class="test" src="{{ include.src }}" alt="{{ include.alt | default(include.caption) }}">
+    {% else %}
+        <img class="test" src="{{ site.baseurl }}{{ include.src }}" alt="{{ include.alt | default(include.caption) }}">
+    {% endif %}
+    {%if include.fig %} <b>Fig. {{ include.fig }}</b>{% endif %}
+    {{ include.caption }}
+</p>

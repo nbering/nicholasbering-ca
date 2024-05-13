@@ -6,7 +6,7 @@ Variables:
  - slug (pen ID from URL)
  - title (title of the code pen)
 {% endcomment %}
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="{{ include.user }}" data-slug-hash="{{ include.slug }}" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="{{ include.title }}">
+<p class="codepen" data-height="{{include.height | default(265)}}" data-theme-id="light" data-default-tab="js,result" data-user="{{ include.user }}" data-slug-hash="{{ include.slug }}" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="{{ include.title }}">
     <span>See the Pen <a href="https://codepen.io/nbering/pen/gOPpeRB">
     {{ include.title }}</a> by {{ include.full_name }} (<a href="https://codepen.io/{{ include.user }}">@{{ include.user }}</a>)
     on <a href="https://codepen.io">CodePen</a>.</span>
