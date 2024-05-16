@@ -5,25 +5,29 @@
             "label": "Jekyll Serve",
             "type": "shell",
             "command": "bundle exec jekyll serve",
-            "isBackground": true
+            "isBackground": true,
+            "problemMatcher": []
         },
         {
             "label": "Jekyll Serve (drafts)",
             "type": "shell",
             "command": "bundle exec jekyll serve --drafts",
-            "isBackground": true
+            "isBackground": true,
+            "problemMatcher": []
         },
         {
             "label": "Jekyll Serve (watch)",
             "type": "shell",
             "command": "bundle exec jekyll serve --watch --livereload --livereload-port 4001",
-            "isBackground": true
+            "isBackground": true,
+            "problemMatcher": []
         },
         {
             "label": "Jekyll Serve (drafts, watch)",
             "type": "shell",
             "command": "bundle exec jekyll serve --drafts --watch --livereload --livereload-port 4001",
-            "isBackground": true
+            "isBackground": true,
+            "problemMatcher": []
         }
     ]
 }
