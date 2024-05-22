@@ -19,6 +19,7 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "ruby --version",
 	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+	"updateContentCommand": "bundle install",
 	"customizations": {
 		"vscode": {
 			"extensions": [
