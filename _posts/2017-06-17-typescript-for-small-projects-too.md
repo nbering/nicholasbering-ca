@@ -1,10 +1,14 @@
 ---
 layout: post
 title: TypeScript for Small Projects, Too!
-description: At my previous job working with Back IO, I was working almost exclusively with TypeScript. It was certainly an eye-opening experience. In this article, I provide a bit of an update on the TypeScript developer experience.
+description: >
+    At my previous job working with Back IO, I was working almost exclusively
+    with TypeScript. It was certainly an eye-opening experience. In this
+    article, I provide a bit of an update on the TypeScript developer experience.
 category: Jekyll
 tags: [TypeScript]
 author: Nicholas Bering
+# cSpell:words momentjs
 ---
 
 At my previous job working with [Back IO][1], I was working almost
@@ -73,7 +77,7 @@ Where TypeScript really shines is when you include the type definitions for
 libraries you consume.
 
 In the pre-2.0 days, it managing type definitions was a pain. There was a huge
-community of developers contributing definitions to [DefinitelyTyped], but
+community of developers contributing definitions to [DefinitelyTyped][7], but
 because they were third-party contributions they were not always up-to-date,
 and being manually assembled there was often quite a lot of style difference
 from one contributor to another.
@@ -90,13 +94,13 @@ the definition [publishing][10] problem in the most elegant ways.
 Today, the only tools I use to import types in npm. To install the type definitions
 to NodeJS, all I need is:
 
-```
+```sh
 npm install --save-dev @types/node
 ```
 
 Looking for types for momentjs?
 
-```
+```sh
 npm install --save-dev @types/moment
 ```
 
@@ -104,23 +108,22 @@ It's that simple. This works because TypeScript 2.x added support for some
 really good default lookup locations for types. No more wiring up references
 with triple-slash comments and xml tags.
 
-JavaScript projects can also provide a typings attribute to their `package.json` file,
-giving TypeScript a more direct hint to where to find the typings without downloading
-any additional packages or files.
+JavaScript projects can also provide a typings attribute to their `package.json`
+file, giving TypeScript a more direct hint to where to find the typings without
+downloading any additional packages or files.
 
 ## So I Changed My Mind
 
 So, I've changed my tune. Now I love TypeScript for everything. This is definitely
 a case of good design, and developers breaking down barriers to use. For me, new
-TypeScript project setup time has gone from over a day (and that's for my 3rd and 4th
-projects), to about 15 minutes.
+TypeScript project setup time has gone from over a day (and that's for my 3rd and
+4th projects), to about 15 minutes.
 
-So if anyone asks me if TypeScript is worth the effort, I'd simply say "yes". No more
-caveats.
+So if anyone asks me if TypeScript is worth the effort, I'd simply say "yes". No
+more caveats.
 
 [1]: http://back.io/
 [2]: https://www.typescriptlang.org/
-[3]: https://www.npmjs.com/package/ts-node
 [4]: https://github.com/mishoo/UglifyJS
 [5]: https://www.npmjs.com/package/source-map-support
 [6]: https://code.visualstudio.com/
