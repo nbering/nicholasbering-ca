@@ -22,7 +22,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"Shopify.ruby-lsp",
+				"Shopify.ruby-extensions-pack",
 				"streetsidesoftware.code-spell-checker-canadian-english",
 				"davidanson.vscode-markdownlint"
 			]
