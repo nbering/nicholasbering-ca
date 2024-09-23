@@ -84,7 +84,7 @@ GEM
     rexml (3.3.7)
     rouge (4.3.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.78.0)
+    sass-embedded (1.79.3)
       google-protobuf (~> 4.27)
       rake (>= 13)
     selma (0.4.6.1)
@@ -112,7 +112,7 @@ DEPENDENCIES
   kramdown (~> 2.4.0)
   kramdown-parser-gfm (~> 1.1.0)
   nokogiri (~> 1.16.7)
-  sass-embedded (~> 1.78)
+  sass-embedded (~> 1.79)
   webrick (~> 1.7)
 
 BUNDLED WITH
