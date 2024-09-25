@@ -7,7 +7,7 @@ gem "kramdown-parser-gfm", "~> 1.1.0"
 gem "html-pipeline", "~> 3.2.1"
 gem "sass-embedded", '~> 1.79'
 gem "nokogiri", "~> 1.16.7"
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
 
 group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.16.0"
