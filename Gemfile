@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "jekyll", "~> 4.3.4"
 gem "jekyll-default-layout", "~> 0.1.5"
-gem "kramdown", "~> 2.4.0"
+gem "kramdown", "~> 2.5.1"
 gem "kramdown-parser-gfm", "~> 1.1.0"
 gem "html-pipeline", "~> 3.2.1"
 gem "sass-embedded", '~> 1.81'
