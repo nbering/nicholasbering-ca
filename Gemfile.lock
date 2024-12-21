@@ -13,10 +13,10 @@ GEM
     ffi (1.17.0-x86_64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
-    google-protobuf (4.28.3-x86_64-darwin)
+    google-protobuf (4.29.2-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.28.3-x86_64-linux)
+    google-protobuf (4.29.2-x86_64-linux)
       bigdecimal
       rake (>= 13)
     html-pipeline (3.2.1)
@@ -84,7 +84,7 @@ GEM
     rexml (3.3.9)
     rouge (4.3.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.81.0)
+    sass-embedded (1.83.0)
       google-protobuf (~> 4.28)
       rake (>= 13)
     selma (0.4.6.1)
@@ -112,7 +112,7 @@ DEPENDENCIES
   kramdown (~> 2.5.1)
   kramdown-parser-gfm (~> 1.1.0)
   nokogiri (~> 1.17.2)
-  sass-embedded (~> 1.81)
+  sass-embedded (~> 1.83)
   webrick (~> 1.9)
 
 BUNDLED WITH
