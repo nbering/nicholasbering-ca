@@ -1,5 +1,7 @@
 ---
 ---
+@use "sass:color";
+
 $baseurl: "{{site.baseurl}}";
 $break-biggest: 750px;
 $break-medium: 600px;
@@ -7,11 +9,11 @@ $break-medium: 600px;
 $primary: #af231c;
 $secondary: #666666;
 $cold-compliment: #1da8af;
-$cold-compliment_10: darken($cold-compliment, 10%);
-$cold-compliment_20: darken($cold-compliment, 20%);
-$cold-compliment_30: darken($cold-compliment, 30%);
-$cold-compliment_40: darken($cold-compliment, 40%);
-$cold-compliment_50: darken($cold-compliment, 50%);
+$cold-compliment_10: color.adjust($cold-compliment, $lightness: -10%);
+$cold-compliment_20: color.adjust($cold-compliment, $lightness: -20%);
+$cold-compliment_30: color.adjust($cold-compliment, $lightness: -30%);
+$cold-compliment_40: color.adjust($cold-compliment, $lightness: -40%);
+$cold-compliment_50: color.adjust($cold-compliment, $lightness: -50%);
 $warm-compliment: #af921d;
 
 @import "resets";
