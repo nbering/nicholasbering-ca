@@ -6,7 +6,7 @@ gem "kramdown", "~> 2.5.1"
 gem "kramdown-parser-gfm", "~> 1.1.0"
 gem "html-pipeline", "~> 3.2.2"
 gem "sass-embedded", '~> 1.86'
-gem "nokogiri", "~> 1.18.5"
+gem "nokogiri", "~> 1.18.7"
 gem "webrick", "~> 1.9"
 
 group :jekyll_plugins do
