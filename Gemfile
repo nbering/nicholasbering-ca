@@ -5,7 +5,7 @@ gem "jekyll-default-layout", "~> 0.1.5"
 gem "kramdown", "~> 2.5.1"
 gem "kramdown-parser-gfm", "~> 1.1.0"
 gem "html-pipeline", "~> 3.2.3"
-gem "sass-embedded", '~> 1.90'
+gem "sass-embedded", '~> 1.91'
 gem "nokogiri", "~> 1.18.9"
 gem "webrick", "~> 1.9"
 
