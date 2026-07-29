@@ -8,6 +8,8 @@ gem "html-pipeline", "~> 3.2.3"
 gem "sass-embedded", '~> 1.97'
 gem "nokogiri", "~> 1.18.10"
 gem "webrick", "~> 1.9"
+gem "psych", "~> 4.0"
+gem "logger"
 
 group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.16.0"
