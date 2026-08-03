@@ -8,7 +8,7 @@ gem "html-pipeline", "~> 3.2.3"
 gem "sass-embedded", '~> 1.97'
 gem "nokogiri", "~> 1.18.10"
 gem "webrick", "~> 1.9"
-gem "psych", "~> 4.0"
+gem "psych", "~> 5.4"
 gem "logger"
 
 group :jekyll_plugins do
