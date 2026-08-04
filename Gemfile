@@ -17,7 +17,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17.0"
   gem "jekyll-titles-from-headings", "~> 0.5.4"
   gem "jekyll-last-modified-at", "1.3.2"
-  gem "jekyll-optional-front-matter", "~> 0.3.2"
+  gem "jekyll-optional-front-matter", "~> 0.3.3"
 
   # TODO: Wasn't using this, but should
   # gem "jekyll-paginate", "1.1.0"
