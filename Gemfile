@@ -15,7 +15,7 @@ group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.16.0"
   gem "jekyll-sitemap", "~> 1.4.0"
   gem "jekyll-feed", "~> 0.17.0"
-  gem "jekyll-titles-from-headings", "~> 0.5.3"
+  gem "jekyll-titles-from-headings", "~> 0.5.4"
   gem "jekyll-last-modified-at", "1.3.2"
   gem "jekyll-optional-front-matter", "~> 0.3.2"
 
