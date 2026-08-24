@@ -83,7 +83,7 @@ GEM
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    psych (5.4.0)
+    psych (5.5.0)
       date
       stringio
     public_suffix (6.0.2)
@@ -127,7 +127,7 @@ DEPENDENCIES
   kramdown-parser-gfm (~> 1.1.0)
   logger
   nokogiri (~> 1.18.10)
-  psych (~> 5.4)
+  psych (~> 5.5)
   sass-embedded (~> 1.97)
   webrick (~> 1.9)
 
