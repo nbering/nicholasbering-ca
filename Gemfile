@@ -12,7 +12,7 @@ gem "psych", "~> 5.5"
 gem "logger"
 
 group :jekyll_plugins do
-  gem "jekyll-redirect-from", "~> 0.16.0"
+  gem "jekyll-redirect-from", "~> 0.17.0"
   gem "jekyll-sitemap", "~> 1.4.0"
   gem "jekyll-feed", "~> 0.18.0"
   gem "jekyll-titles-from-headings", "~> 0.5.7"
